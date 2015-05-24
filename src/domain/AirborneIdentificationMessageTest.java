@@ -6,8 +6,8 @@ import static org.junit.Assert.*;
 /**
  * The class <code>AirborneIdentificationMessageTest</code> contains tests for the class <code>{@link AirborneIdentificationMessage}</code>.
  *
- * @generatedBy CodePro at 17.05.15 21:38
- * @author Dogma
+ * @generatedBy CodePro at 24.05.15 21:19
+ * @author Matthias
  * @version $Revision: 1.0 $
  */
 public class AirborneIdentificationMessageTest {
@@ -16,7 +16,7 @@ public class AirborneIdentificationMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testAirborneIdentificationMessage_1()
@@ -30,10 +30,12 @@ public class AirborneIdentificationMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneIdentificationMessage.<init>(AirborneIdentificationMessage.java:9)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneIdentificationMessage.getAircraftID(AirborneIdentificationMessage.java:15)
+		//       at domain.AirborneIdentificationMessage.toString(AirborneIdentificationMessage.java:24)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneIdentificationMessage.<init>(AirborneIdentificationMessage.java:11)
 		assertNotNull(result);
 	}
 
@@ -42,7 +44,7 @@ public class AirborneIdentificationMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetAircraftID_1()
@@ -53,10 +55,12 @@ public class AirborneIdentificationMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneIdentificationMessage.<init>(AirborneIdentificationMessage.java:9)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneIdentificationMessage.getAircraftID(AirborneIdentificationMessage.java:15)
+		//       at domain.AirborneIdentificationMessage.toString(AirborneIdentificationMessage.java:24)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneIdentificationMessage.<init>(AirborneIdentificationMessage.java:11)
 		assertNotNull(result);
 	}
 
@@ -65,7 +69,7 @@ public class AirborneIdentificationMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testPrint_1()
@@ -76,10 +80,36 @@ public class AirborneIdentificationMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneIdentificationMessage.<init>(AirborneIdentificationMessage.java:9)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneIdentificationMessage.getAircraftID(AirborneIdentificationMessage.java:15)
+		//       at domain.AirborneIdentificationMessage.toString(AirborneIdentificationMessage.java:24)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneIdentificationMessage.<init>(AirborneIdentificationMessage.java:11)
+	}
+
+	/**
+	 * Run the void print() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 24.05.15 21:19
+	 */
+	@Test
+	public void testPrint_2()
+		throws Exception {
+		AirborneIdentificationMessage fixture = new AirborneIdentificationMessage("", 1, 1, 1L);
+
+		fixture.print();
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.NullPointerException
+		//       at domain.AirborneIdentificationMessage.getAircraftID(AirborneIdentificationMessage.java:15)
+		//       at domain.AirborneIdentificationMessage.toString(AirborneIdentificationMessage.java:24)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneIdentificationMessage.<init>(AirborneIdentificationMessage.java:11)
 	}
 
 	/**
@@ -87,7 +117,7 @@ public class AirborneIdentificationMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testToJedisString_1()
@@ -98,10 +128,37 @@ public class AirborneIdentificationMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneIdentificationMessage.<init>(AirborneIdentificationMessage.java:9)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneIdentificationMessage.getAircraftID(AirborneIdentificationMessage.java:15)
+		//       at domain.AirborneIdentificationMessage.toString(AirborneIdentificationMessage.java:24)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneIdentificationMessage.<init>(AirborneIdentificationMessage.java:11)
+		assertNotNull(result);
+	}
+
+	/**
+	 * Run the String toJedisString() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 24.05.15 21:19
+	 */
+	@Test
+	public void testToJedisString_2()
+		throws Exception {
+		AirborneIdentificationMessage fixture = new AirborneIdentificationMessage("", 1, 1, 1L);
+
+		String result = fixture.toJedisString();
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.NullPointerException
+		//       at domain.AirborneIdentificationMessage.getAircraftID(AirborneIdentificationMessage.java:15)
+		//       at domain.AirborneIdentificationMessage.toString(AirborneIdentificationMessage.java:24)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneIdentificationMessage.<init>(AirborneIdentificationMessage.java:11)
 		assertNotNull(result);
 	}
 
@@ -110,7 +167,7 @@ public class AirborneIdentificationMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testToString_1()
@@ -121,10 +178,37 @@ public class AirborneIdentificationMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneIdentificationMessage.<init>(AirborneIdentificationMessage.java:9)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneIdentificationMessage.getAircraftID(AirborneIdentificationMessage.java:15)
+		//       at domain.AirborneIdentificationMessage.toString(AirborneIdentificationMessage.java:24)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneIdentificationMessage.<init>(AirborneIdentificationMessage.java:11)
+		assertNotNull(result);
+	}
+
+	/**
+	 * Run the String toString() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 24.05.15 21:19
+	 */
+	@Test
+	public void testToString_2()
+		throws Exception {
+		AirborneIdentificationMessage fixture = new AirborneIdentificationMessage("", 1, 1, 1L);
+
+		String result = fixture.toString();
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.NullPointerException
+		//       at domain.AirborneIdentificationMessage.getAircraftID(AirborneIdentificationMessage.java:15)
+		//       at domain.AirborneIdentificationMessage.toString(AirborneIdentificationMessage.java:24)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneIdentificationMessage.<init>(AirborneIdentificationMessage.java:11)
 		assertNotNull(result);
 	}
 
@@ -134,7 +218,7 @@ public class AirborneIdentificationMessageTest {
 	 * @throws Exception
 	 *         if the initialization fails for some reason
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Before
 	public void setUp()
@@ -148,7 +232,7 @@ public class AirborneIdentificationMessageTest {
 	 * @throws Exception
 	 *         if the clean-up fails for some reason
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@After
 	public void tearDown()
@@ -161,7 +245,7 @@ public class AirborneIdentificationMessageTest {
 	 *
 	 * @param args the command line arguments
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	public static void main(String[] args) {
 		new org.junit.runner.JUnitCore().run(AirborneIdentificationMessageTest.class);

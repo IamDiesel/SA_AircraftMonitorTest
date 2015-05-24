@@ -3,12 +3,13 @@ package factory;
 import org.junit.*;
 import domain.AdsMessage;
 import static org.junit.Assert.*;
+import exception.AdsMessageFactoryException;
 
 /**
  * The class <code>AdsMessageFactoryTest</code> contains tests for the class <code>{@link AdsMessageFactory}</code>.
  *
- * @generatedBy CodePro at 17.05.15 21:38
- * @author Dogma
+ * @generatedBy CodePro at 24.05.15 21:19
+ * @author Matthias
  * @version $Revision: 1.0 $
  */
 public class AdsMessageFactoryTest {
@@ -17,7 +18,7 @@ public class AdsMessageFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetInstance_1()
@@ -34,7 +35,7 @@ public class AdsMessageFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetInstance_2()
@@ -51,21 +52,24 @@ public class AdsMessageFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testSentence2Message_1()
 		throws Exception {
 		AdsMessageFactory fixture = AdsMessageFactory.getInstance();
-		String sentence = "";
+		String sentence = "a";
 
 		AdsMessage result = fixture.sentence2Message(sentence);
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -1
-		//       at java.lang.String.substring(Unknown Source)
-		//       at factory.AdsMessageFactory.sentence2Message(AdsMessageFactory.java:29)
+		//    exception.AdsMessageFactoryException: AdsMessageFactoryException No. 201: JSON Start identifier (*) or JSON End Identifier (;) not available in sentence at sentece2Message()-conversion--Begin Err Data--
+		//       Sentence: a
+		//       Payload:
+		//       binarySentence:
+		//       --End Err Data--
+		//       at factory.AdsMessageFactory.sentence2Message(AdsMessageFactory.java:34)
 		assertNotNull(result);
 	}
 
@@ -74,21 +78,24 @@ public class AdsMessageFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testSentence2Message_2()
 		throws Exception {
 		AdsMessageFactory fixture = AdsMessageFactory.getInstance();
-		String sentence = "";
+		String sentence = "a";
 
 		AdsMessage result = fixture.sentence2Message(sentence);
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -1
-		//       at java.lang.String.substring(Unknown Source)
-		//       at factory.AdsMessageFactory.sentence2Message(AdsMessageFactory.java:29)
+		//    exception.AdsMessageFactoryException: AdsMessageFactoryException No. 201: JSON Start identifier (*) or JSON End Identifier (;) not available in sentence at sentece2Message()-conversion--Begin Err Data--
+		//       Sentence: a
+		//       Payload:
+		//       binarySentence:
+		//       --End Err Data--
+		//       at factory.AdsMessageFactory.sentence2Message(AdsMessageFactory.java:34)
 		assertNotNull(result);
 	}
 
@@ -97,21 +104,24 @@ public class AdsMessageFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testSentence2Message_3()
 		throws Exception {
 		AdsMessageFactory fixture = AdsMessageFactory.getInstance();
-		String sentence = "";
+		String sentence = "a";
 
 		AdsMessage result = fixture.sentence2Message(sentence);
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -1
-		//       at java.lang.String.substring(Unknown Source)
-		//       at factory.AdsMessageFactory.sentence2Message(AdsMessageFactory.java:29)
+		//    exception.AdsMessageFactoryException: AdsMessageFactoryException No. 201: JSON Start identifier (*) or JSON End Identifier (;) not available in sentence at sentece2Message()-conversion--Begin Err Data--
+		//       Sentence: a
+		//       Payload:
+		//       binarySentence:
+		//       --End Err Data--
+		//       at factory.AdsMessageFactory.sentence2Message(AdsMessageFactory.java:34)
 		assertNotNull(result);
 	}
 
@@ -120,21 +130,24 @@ public class AdsMessageFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testSentence2Message_4()
 		throws Exception {
 		AdsMessageFactory fixture = AdsMessageFactory.getInstance();
-		String sentence = "";
+		String sentence = "a";
 
 		AdsMessage result = fixture.sentence2Message(sentence);
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -1
-		//       at java.lang.String.substring(Unknown Source)
-		//       at factory.AdsMessageFactory.sentence2Message(AdsMessageFactory.java:29)
+		//    exception.AdsMessageFactoryException: AdsMessageFactoryException No. 201: JSON Start identifier (*) or JSON End Identifier (;) not available in sentence at sentece2Message()-conversion--Begin Err Data--
+		//       Sentence: a
+		//       Payload:
+		//       binarySentence:
+		//       --End Err Data--
+		//       at factory.AdsMessageFactory.sentence2Message(AdsMessageFactory.java:34)
 		assertNotNull(result);
 	}
 
@@ -143,21 +156,24 @@ public class AdsMessageFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testSentence2Message_5()
 		throws Exception {
 		AdsMessageFactory fixture = AdsMessageFactory.getInstance();
-		String sentence = "";
+		String sentence = "a";
 
 		AdsMessage result = fixture.sentence2Message(sentence);
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -1
-		//       at java.lang.String.substring(Unknown Source)
-		//       at factory.AdsMessageFactory.sentence2Message(AdsMessageFactory.java:29)
+		//    exception.AdsMessageFactoryException: AdsMessageFactoryException No. 201: JSON Start identifier (*) or JSON End Identifier (;) not available in sentence at sentece2Message()-conversion--Begin Err Data--
+		//       Sentence: a
+		//       Payload:
+		//       binarySentence:
+		//       --End Err Data--
+		//       at factory.AdsMessageFactory.sentence2Message(AdsMessageFactory.java:34)
 		assertNotNull(result);
 	}
 
@@ -166,21 +182,24 @@ public class AdsMessageFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testSentence2Message_6()
 		throws Exception {
 		AdsMessageFactory fixture = AdsMessageFactory.getInstance();
-		String sentence = "";
+		String sentence = "a";
 
 		AdsMessage result = fixture.sentence2Message(sentence);
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -1
-		//       at java.lang.String.substring(Unknown Source)
-		//       at factory.AdsMessageFactory.sentence2Message(AdsMessageFactory.java:29)
+		//    exception.AdsMessageFactoryException: AdsMessageFactoryException No. 201: JSON Start identifier (*) or JSON End Identifier (;) not available in sentence at sentece2Message()-conversion--Begin Err Data--
+		//       Sentence: a
+		//       Payload:
+		//       binarySentence:
+		//       --End Err Data--
+		//       at factory.AdsMessageFactory.sentence2Message(AdsMessageFactory.java:34)
 		assertNotNull(result);
 	}
 
@@ -189,21 +208,24 @@ public class AdsMessageFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testSentence2Message_7()
 		throws Exception {
 		AdsMessageFactory fixture = AdsMessageFactory.getInstance();
-		String sentence = "";
+		String sentence = "a";
 
 		AdsMessage result = fixture.sentence2Message(sentence);
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -1
-		//       at java.lang.String.substring(Unknown Source)
-		//       at factory.AdsMessageFactory.sentence2Message(AdsMessageFactory.java:29)
+		//    exception.AdsMessageFactoryException: AdsMessageFactoryException No. 201: JSON Start identifier (*) or JSON End Identifier (;) not available in sentence at sentece2Message()-conversion--Begin Err Data--
+		//       Sentence: a
+		//       Payload:
+		//       binarySentence:
+		//       --End Err Data--
+		//       at factory.AdsMessageFactory.sentence2Message(AdsMessageFactory.java:34)
 		assertNotNull(result);
 	}
 
@@ -212,21 +234,24 @@ public class AdsMessageFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testSentence2Message_8()
 		throws Exception {
 		AdsMessageFactory fixture = AdsMessageFactory.getInstance();
-		String sentence = "";
+		String sentence = "a";
 
 		AdsMessage result = fixture.sentence2Message(sentence);
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -1
-		//       at java.lang.String.substring(Unknown Source)
-		//       at factory.AdsMessageFactory.sentence2Message(AdsMessageFactory.java:29)
+		//    exception.AdsMessageFactoryException: AdsMessageFactoryException No. 201: JSON Start identifier (*) or JSON End Identifier (;) not available in sentence at sentece2Message()-conversion--Begin Err Data--
+		//       Sentence: a
+		//       Payload:
+		//       binarySentence:
+		//       --End Err Data--
+		//       at factory.AdsMessageFactory.sentence2Message(AdsMessageFactory.java:34)
 		assertNotNull(result);
 	}
 
@@ -235,21 +260,24 @@ public class AdsMessageFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testSentence2Message_9()
 		throws Exception {
 		AdsMessageFactory fixture = AdsMessageFactory.getInstance();
-		String sentence = "";
+		String sentence = "a";
 
 		AdsMessage result = fixture.sentence2Message(sentence);
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -1
-		//       at java.lang.String.substring(Unknown Source)
-		//       at factory.AdsMessageFactory.sentence2Message(AdsMessageFactory.java:29)
+		//    exception.AdsMessageFactoryException: AdsMessageFactoryException No. 201: JSON Start identifier (*) or JSON End Identifier (;) not available in sentence at sentece2Message()-conversion--Begin Err Data--
+		//       Sentence: a
+		//       Payload:
+		//       binarySentence:
+		//       --End Err Data--
+		//       at factory.AdsMessageFactory.sentence2Message(AdsMessageFactory.java:34)
 		assertNotNull(result);
 	}
 
@@ -258,21 +286,24 @@ public class AdsMessageFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testSentence2Message_10()
 		throws Exception {
 		AdsMessageFactory fixture = AdsMessageFactory.getInstance();
-		String sentence = "";
+		String sentence = "a";
 
 		AdsMessage result = fixture.sentence2Message(sentence);
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -1
-		//       at java.lang.String.substring(Unknown Source)
-		//       at factory.AdsMessageFactory.sentence2Message(AdsMessageFactory.java:29)
+		//    exception.AdsMessageFactoryException: AdsMessageFactoryException No. 201: JSON Start identifier (*) or JSON End Identifier (;) not available in sentence at sentece2Message()-conversion--Begin Err Data--
+		//       Sentence: a
+		//       Payload:
+		//       binarySentence:
+		//       --End Err Data--
+		//       at factory.AdsMessageFactory.sentence2Message(AdsMessageFactory.java:34)
 		assertNotNull(result);
 	}
 
@@ -281,21 +312,24 @@ public class AdsMessageFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testSentence2Message_11()
 		throws Exception {
 		AdsMessageFactory fixture = AdsMessageFactory.getInstance();
-		String sentence = "";
+		String sentence = "a";
 
 		AdsMessage result = fixture.sentence2Message(sentence);
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -1
-		//       at java.lang.String.substring(Unknown Source)
-		//       at factory.AdsMessageFactory.sentence2Message(AdsMessageFactory.java:29)
+		//    exception.AdsMessageFactoryException: AdsMessageFactoryException No. 201: JSON Start identifier (*) or JSON End Identifier (;) not available in sentence at sentece2Message()-conversion--Begin Err Data--
+		//       Sentence: a
+		//       Payload:
+		//       binarySentence:
+		//       --End Err Data--
+		//       at factory.AdsMessageFactory.sentence2Message(AdsMessageFactory.java:34)
 		assertNotNull(result);
 	}
 
@@ -304,21 +338,24 @@ public class AdsMessageFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testSentence2Message_12()
 		throws Exception {
 		AdsMessageFactory fixture = AdsMessageFactory.getInstance();
-		String sentence = "";
+		String sentence = "a";
 
 		AdsMessage result = fixture.sentence2Message(sentence);
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -1
-		//       at java.lang.String.substring(Unknown Source)
-		//       at factory.AdsMessageFactory.sentence2Message(AdsMessageFactory.java:29)
+		//    exception.AdsMessageFactoryException: AdsMessageFactoryException No. 201: JSON Start identifier (*) or JSON End Identifier (;) not available in sentence at sentece2Message()-conversion--Begin Err Data--
+		//       Sentence: a
+		//       Payload:
+		//       binarySentence:
+		//       --End Err Data--
+		//       at factory.AdsMessageFactory.sentence2Message(AdsMessageFactory.java:34)
 		assertNotNull(result);
 	}
 
@@ -327,9 +364,9 @@ public class AdsMessageFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
-	@Test
+	@Test(expected = exception.AdsMessageFactoryException.class)
 	public void testSentence2Message_13()
 		throws Exception {
 		AdsMessageFactory fixture = AdsMessageFactory.getInstance();
@@ -338,10 +375,6 @@ public class AdsMessageFactoryTest {
 		AdsMessage result = fixture.sentence2Message(sentence);
 
 		// add additional test code here
-		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -1
-		//       at java.lang.String.substring(Unknown Source)
-		//       at factory.AdsMessageFactory.sentence2Message(AdsMessageFactory.java:29)
 		assertNotNull(result);
 	}
 
@@ -350,21 +383,17 @@ public class AdsMessageFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
-	@Test
+	@Test(expected = exception.AdsMessageFactoryException.class)
 	public void testSentence2Message_14()
 		throws Exception {
 		AdsMessageFactory fixture = AdsMessageFactory.getInstance();
-		String sentence = "";
+		String sentence = "a";
 
 		AdsMessage result = fixture.sentence2Message(sentence);
 
 		// add additional test code here
-		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -1
-		//       at java.lang.String.substring(Unknown Source)
-		//       at factory.AdsMessageFactory.sentence2Message(AdsMessageFactory.java:29)
 		assertNotNull(result);
 	}
 
@@ -373,21 +402,17 @@ public class AdsMessageFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
-	@Test
+	@Test(expected = exception.AdsMessageFactoryException.class)
 	public void testSentence2Message_15()
 		throws Exception {
 		AdsMessageFactory fixture = AdsMessageFactory.getInstance();
-		String sentence = "";
+		String sentence = "a";
 
 		AdsMessage result = fixture.sentence2Message(sentence);
 
 		// add additional test code here
-		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -1
-		//       at java.lang.String.substring(Unknown Source)
-		//       at factory.AdsMessageFactory.sentence2Message(AdsMessageFactory.java:29)
 		assertNotNull(result);
 	}
 
@@ -396,21 +421,17 @@ public class AdsMessageFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
-	@Test
+	@Test(expected = exception.AdsMessageFactoryException.class)
 	public void testSentence2Message_16()
 		throws Exception {
 		AdsMessageFactory fixture = AdsMessageFactory.getInstance();
-		String sentence = "";
+		String sentence = "a";
 
 		AdsMessage result = fixture.sentence2Message(sentence);
 
 		// add additional test code here
-		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -1
-		//       at java.lang.String.substring(Unknown Source)
-		//       at factory.AdsMessageFactory.sentence2Message(AdsMessageFactory.java:29)
 		assertNotNull(result);
 	}
 
@@ -420,7 +441,7 @@ public class AdsMessageFactoryTest {
 	 * @throws Exception
 	 *         if the initialization fails for some reason
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Before
 	public void setUp()
@@ -434,7 +455,7 @@ public class AdsMessageFactoryTest {
 	 * @throws Exception
 	 *         if the clean-up fails for some reason
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@After
 	public void tearDown()
@@ -447,7 +468,7 @@ public class AdsMessageFactoryTest {
 	 *
 	 * @param args the command line arguments
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	public static void main(String[] args) {
 		new org.junit.runner.JUnitCore().run(AdsMessageFactoryTest.class);

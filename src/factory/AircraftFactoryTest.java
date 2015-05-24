@@ -3,12 +3,13 @@ package factory;
 import org.junit.*;
 import domain.Aircraft;
 import static org.junit.Assert.*;
+import exception.AircraftFactoryException;
 
 /**
  * The class <code>AircraftFactoryTest</code> contains tests for the class <code>{@link AircraftFactory}</code>.
  *
- * @generatedBy CodePro at 17.05.15 21:38
- * @author Dogma
+ * @generatedBy CodePro at 24.05.15 21:19
+ * @author Matthias
  * @version $Revision: 1.0 $
  */
 public class AircraftFactoryTest {
@@ -17,7 +18,7 @@ public class AircraftFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetInstance_1()
@@ -34,7 +35,7 @@ public class AircraftFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetInstance_2()
@@ -51,9 +52,9 @@ public class AircraftFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
-	@Test
+	@Test(expected = exception.AircraftFactoryException.class)
 	public void testMessage2Aircraft_1()
 		throws Exception {
 		AircraftFactory fixture = AircraftFactory.getInstance();
@@ -62,9 +63,6 @@ public class AircraftFactoryTest {
 		Aircraft result = fixture.message2Aircraft(msg);
 
 		// add additional test code here
-		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 1
-		//       at factory.AircraftFactory.message2Aircraft(AircraftFactory.java:24)
 		assertNotNull(result);
 	}
 
@@ -73,9 +71,9 @@ public class AircraftFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
-	@Test
+	@Test(expected = exception.AircraftFactoryException.class)
 	public void testMessage2Aircraft_2()
 		throws Exception {
 		AircraftFactory fixture = AircraftFactory.getInstance();
@@ -84,9 +82,25 @@ public class AircraftFactoryTest {
 		Aircraft result = fixture.message2Aircraft(msg);
 
 		// add additional test code here
-		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 1
-		//       at factory.AircraftFactory.message2Aircraft(AircraftFactory.java:24)
+		assertNotNull(result);
+	}
+
+	/**
+	 * Run the Aircraft message2Aircraft(String) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 24.05.15 21:19
+	 */
+	@Test(expected = exception.AircraftFactoryException.class)
+	public void testMessage2Aircraft_3()
+		throws Exception {
+		AircraftFactory fixture = AircraftFactory.getInstance();
+		String msg = "";
+
+		Aircraft result = fixture.message2Aircraft(msg);
+
+		// add additional test code here
 		assertNotNull(result);
 	}
 
@@ -95,9 +109,9 @@ public class AircraftFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
-	@Test
+	@Test(expected = exception.AircraftFactoryException.class)
 	public void testUpdateIdentification_1()
 		throws Exception {
 		AircraftFactory fixture = AircraftFactory.getInstance();
@@ -107,9 +121,25 @@ public class AircraftFactoryTest {
 		fixture.updateIdentification(msg, aircraft);
 
 		// add additional test code here
-		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at factory.AircraftFactory.updateIdentification(AircraftFactory.java:29)
+	}
+
+	/**
+	 * Run the void updateIdentification(String,Aircraft) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 24.05.15 21:19
+	 */
+	@Test(expected = exception.AircraftFactoryException.class)
+	public void testUpdateIdentification_2()
+		throws Exception {
+		AircraftFactory fixture = AircraftFactory.getInstance();
+		String msg = "";
+		Aircraft aircraft = new Aircraft(1);
+
+		fixture.updateIdentification(msg, aircraft);
+
+		// add additional test code here
 	}
 
 	/**
@@ -117,7 +147,7 @@ public class AircraftFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testUpdatePosition_1()
@@ -130,10 +160,13 @@ public class AircraftFactoryTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at domain.AdsMessage.<init>(AdsMessage.java:30)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:12)
-		//       at factory.AircraftFactory.updatePosition(AircraftFactory.java:41)
+		//    java.lang.NullPointerException
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
+		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
+		//       at factory.AircraftFactory.updatePosition(AircraftFactory.java:47)
 	}
 
 	/**
@@ -141,7 +174,7 @@ public class AircraftFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testUpdatePosition_2()
@@ -154,10 +187,40 @@ public class AircraftFactoryTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at domain.AdsMessage.<init>(AdsMessage.java:30)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:12)
-		//       at factory.AircraftFactory.updatePosition(AircraftFactory.java:41)
+		//    java.lang.NullPointerException
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
+		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
+		//       at factory.AircraftFactory.updatePosition(AircraftFactory.java:47)
+	}
+
+	/**
+	 * Run the void updatePosition(String,Aircraft) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 24.05.15 21:19
+	 */
+	@Test
+	public void testUpdatePosition_3()
+		throws Exception {
+		AircraftFactory fixture = AircraftFactory.getInstance();
+		String msg = "";
+		Aircraft aircraft = new Aircraft(1);
+
+		fixture.updatePosition(msg, aircraft);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.NullPointerException
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
+		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
+		//       at factory.AircraftFactory.updatePosition(AircraftFactory.java:47)
 	}
 
 	/**
@@ -165,9 +228,9 @@ public class AircraftFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
-	@Test
+	@Test(expected = exception.AircraftFactoryException.class)
 	public void testUpdateVelocity_1()
 		throws Exception {
 		AircraftFactory fixture = AircraftFactory.getInstance();
@@ -177,9 +240,6 @@ public class AircraftFactoryTest {
 		fixture.updateVelocity(msg, aircraft);
 
 		// add additional test code here
-		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at factory.AircraftFactory.updateVelocity(AircraftFactory.java:35)
 	}
 
 	/**
@@ -187,9 +247,9 @@ public class AircraftFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
-	@Test
+	@Test(expected = exception.AircraftFactoryException.class)
 	public void testUpdateVelocity_2()
 		throws Exception {
 		AircraftFactory fixture = AircraftFactory.getInstance();
@@ -199,9 +259,6 @@ public class AircraftFactoryTest {
 		fixture.updateVelocity(msg, aircraft);
 
 		// add additional test code here
-		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at factory.AircraftFactory.updateVelocity(AircraftFactory.java:35)
 	}
 
 	/**
@@ -209,9 +266,9 @@ public class AircraftFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
-	@Test
+	@Test(expected = exception.AircraftFactoryException.class)
 	public void testUpdateVelocity_3()
 		throws Exception {
 		AircraftFactory fixture = AircraftFactory.getInstance();
@@ -221,9 +278,25 @@ public class AircraftFactoryTest {
 		fixture.updateVelocity(msg, aircraft);
 
 		// add additional test code here
-		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at factory.AircraftFactory.updateVelocity(AircraftFactory.java:35)
+	}
+
+	/**
+	 * Run the void updateVelocity(String,Aircraft) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 24.05.15 21:19
+	 */
+	@Test(expected = exception.AircraftFactoryException.class)
+	public void testUpdateVelocity_4()
+		throws Exception {
+		AircraftFactory fixture = AircraftFactory.getInstance();
+		String msg = "";
+		Aircraft aircraft = new Aircraft(1);
+
+		fixture.updateVelocity(msg, aircraft);
+
+		// add additional test code here
 	}
 
 	/**
@@ -232,7 +305,7 @@ public class AircraftFactoryTest {
 	 * @throws Exception
 	 *         if the initialization fails for some reason
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Before
 	public void setUp()
@@ -246,7 +319,7 @@ public class AircraftFactoryTest {
 	 * @throws Exception
 	 *         if the clean-up fails for some reason
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@After
 	public void tearDown()
@@ -259,7 +332,7 @@ public class AircraftFactoryTest {
 	 *
 	 * @param args the command line arguments
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	public static void main(String[] args) {
 		new org.junit.runner.JUnitCore().run(AircraftFactoryTest.class);

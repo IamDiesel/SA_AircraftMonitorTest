@@ -1,4 +1,4 @@
-package translator;
+package exception;
 
 import org.junit.runner.JUnitCore;
 import org.junit.runner.RunWith;
@@ -15,8 +15,12 @@ import org.junit.runners.Suite;
  */
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
-	SixBitASCIITest.class,
-	NumberOfLongitudeZonesTest.class,
+	AircraftFactoryExceptionTest.class,
+	Http2RedisExceptionTest.class,
+	AircraftExceptionTest.class,
+	AdsMessageExceptionTest.class,
+	AdsMessageFactoryExceptionTest.class,
+	SixBitASCIIExceptionTest.class,
 })
 public class TestAll {
 

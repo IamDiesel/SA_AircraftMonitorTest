@@ -2,6 +2,7 @@ package server;
 
 import static org.junit.Assert.*;
 
+import org.junit.*;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -18,18 +19,6 @@ import redis.clients.jedis.Jedis;
  * @version $Revision: 1.0 $
  */
 public class JedisAircraftServerTest {
-	/**
-	 * Run the JedisAircraftServer() constructor test.
-	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
-	 */
-	@Test
-	public void testJedisAircraftServer_1()
-		throws Exception {
-		JedisAircraftServer result = new JedisAircraftServer();
-		
-		// add additional test code here
-	}
 	
 	@Test
 	public void testOnMessage_1()
@@ -57,11 +46,24 @@ public class JedisAircraftServerTest {
 	}
 
 	/**
+	 * Run the JedisAircraftServer() constructor test.
+	 *
+	 * @generatedBy CodePro at 24.05.15 21:19
+	 */
+	@Test
+	public void testJedisAircraftServer_1()
+		throws Exception {
+		JedisAircraftServer result = new JedisAircraftServer();
+		assertNotNull(result);
+		// add additional test code here
+	}
+
+	/**
 	 * Run the void onMessage(String,String) method test.
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testOnMessage_2()
@@ -75,7 +77,7 @@ public class JedisAircraftServerTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.ArrayIndexOutOfBoundsException: 1
-		//       at server.JedisAircraftServer.onMessage(JedisAircraftServer.java:21)
+		//       at server.JedisAircraftServer.onMessage(JedisAircraftServer.java:22)
 	}
 
 	/**
@@ -83,13 +85,13 @@ public class JedisAircraftServerTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testOnMessage_3()
 		throws Exception {
 		JedisAircraftServer fixture = new JedisAircraftServer();
-		String channel = "ads.msg.identification";
+		String channel = "ads.msg.position";
 		String message = "";
 
 		fixture.onMessage(channel, message);
@@ -97,7 +99,7 @@ public class JedisAircraftServerTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.ArrayIndexOutOfBoundsException: 1
-		//       at server.JedisAircraftServer.onMessage(JedisAircraftServer.java:21)
+		//       at server.JedisAircraftServer.onMessage(JedisAircraftServer.java:22)
 	}
 
 	/**
@@ -105,12 +107,34 @@ public class JedisAircraftServerTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testOnMessage_4()
 		throws Exception {
 		JedisAircraftServer fixture = new JedisAircraftServer();
+		String channel = "ads.msg.velocity";
+		String message = "";
+
+		fixture.onMessage(channel, message);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ArrayIndexOutOfBoundsException: 1
+		//       at server.JedisAircraftServer.onMessage(JedisAircraftServer.java:22)
+	}
+
+	/**
+	 * Run the void onMessage(String,String) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 24.05.15 21:19
+	 */
+	@Test
+	public void testOnMessage_5()
+		throws Exception {
+		JedisAircraftServer fixture = new JedisAircraftServer();
 		String channel = "ads.msg.identification";
 		String message = "";
 
@@ -119,7 +143,7 @@ public class JedisAircraftServerTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.ArrayIndexOutOfBoundsException: 1
-		//       at server.JedisAircraftServer.onMessage(JedisAircraftServer.java:21)
+		//       at server.JedisAircraftServer.onMessage(JedisAircraftServer.java:22)
 	}
 
 	/**
@@ -127,35 +151,13 @@ public class JedisAircraftServerTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
-	 */
-	@Test
-	public void testOnMessage_5()
-		throws Exception {
-		JedisAircraftServer fixture = new JedisAircraftServer();
-		String channel = "ads.msg.position";
-		String message = "";
-
-		fixture.onMessage(channel, message);
-
-		// add additional test code here
-		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 1
-		//       at server.JedisAircraftServer.onMessage(JedisAircraftServer.java:21)
-	}
-
-	/**
-	 * Run the void onMessage(String,String) method test.
-	 *
-	 * @throws Exception
-	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testOnMessage_6()
 		throws Exception {
 		JedisAircraftServer fixture = new JedisAircraftServer();
-		String channel = "ads.msg.position";
+		String channel = "ads.msg.identification";
 		String message = "";
 
 		fixture.onMessage(channel, message);
@@ -163,7 +165,7 @@ public class JedisAircraftServerTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.ArrayIndexOutOfBoundsException: 1
-		//       at server.JedisAircraftServer.onMessage(JedisAircraftServer.java:21)
+		//       at server.JedisAircraftServer.onMessage(JedisAircraftServer.java:22)
 	}
 
 	/**
@@ -171,13 +173,13 @@ public class JedisAircraftServerTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testOnMessage_7()
 		throws Exception {
 		JedisAircraftServer fixture = new JedisAircraftServer();
-		String channel = "ads.msg.position";
+		String channel = "ads.msg.identification";
 		String message = "";
 
 		fixture.onMessage(channel, message);
@@ -185,7 +187,7 @@ public class JedisAircraftServerTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.ArrayIndexOutOfBoundsException: 1
-		//       at server.JedisAircraftServer.onMessage(JedisAircraftServer.java:21)
+		//       at server.JedisAircraftServer.onMessage(JedisAircraftServer.java:22)
 	}
 
 	/**
@@ -193,7 +195,7 @@ public class JedisAircraftServerTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testOnMessage_8()
@@ -207,7 +209,7 @@ public class JedisAircraftServerTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.ArrayIndexOutOfBoundsException: 1
-		//       at server.JedisAircraftServer.onMessage(JedisAircraftServer.java:21)
+		//       at server.JedisAircraftServer.onMessage(JedisAircraftServer.java:22)
 	}
 
 	/**
@@ -215,13 +217,13 @@ public class JedisAircraftServerTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testOnMessage_9()
 		throws Exception {
 		JedisAircraftServer fixture = new JedisAircraftServer();
-		String channel = "ads.msg.velocity";
+		String channel = "ads.msg.position";
 		String message = "";
 
 		fixture.onMessage(channel, message);
@@ -229,7 +231,7 @@ public class JedisAircraftServerTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.ArrayIndexOutOfBoundsException: 1
-		//       at server.JedisAircraftServer.onMessage(JedisAircraftServer.java:21)
+		//       at server.JedisAircraftServer.onMessage(JedisAircraftServer.java:22)
 	}
 
 	/**
@@ -237,13 +239,13 @@ public class JedisAircraftServerTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testOnMessage_10()
 		throws Exception {
 		JedisAircraftServer fixture = new JedisAircraftServer();
-		String channel = "ads.msg.velocity";
+		String channel = "ads.msg.position";
 		String message = "";
 
 		fixture.onMessage(channel, message);
@@ -251,7 +253,7 @@ public class JedisAircraftServerTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.ArrayIndexOutOfBoundsException: 1
-		//       at server.JedisAircraftServer.onMessage(JedisAircraftServer.java:21)
+		//       at server.JedisAircraftServer.onMessage(JedisAircraftServer.java:22)
 	}
 
 	/**
@@ -259,7 +261,7 @@ public class JedisAircraftServerTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testOnMessage_11()
@@ -273,7 +275,7 @@ public class JedisAircraftServerTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.ArrayIndexOutOfBoundsException: 1
-		//       at server.JedisAircraftServer.onMessage(JedisAircraftServer.java:21)
+		//       at server.JedisAircraftServer.onMessage(JedisAircraftServer.java:22)
 	}
 
 	/**
@@ -281,7 +283,7 @@ public class JedisAircraftServerTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testOnMessage_12()
@@ -295,7 +297,7 @@ public class JedisAircraftServerTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.ArrayIndexOutOfBoundsException: 1
-		//       at server.JedisAircraftServer.onMessage(JedisAircraftServer.java:21)
+		//       at server.JedisAircraftServer.onMessage(JedisAircraftServer.java:22)
 	}
 
 	/**
@@ -303,13 +305,13 @@ public class JedisAircraftServerTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testOnMessage_13()
 		throws Exception {
 		JedisAircraftServer fixture = new JedisAircraftServer();
-		String channel = "";
+		String channel = "ads.msg.velocity";
 		String message = "";
 
 		fixture.onMessage(channel, message);
@@ -317,7 +319,7 @@ public class JedisAircraftServerTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.ArrayIndexOutOfBoundsException: 1
-		//       at server.JedisAircraftServer.onMessage(JedisAircraftServer.java:21)
+		//       at server.JedisAircraftServer.onMessage(JedisAircraftServer.java:22)
 	}
 
 	/**
@@ -325,7 +327,7 @@ public class JedisAircraftServerTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testOnMessage_14()
@@ -339,7 +341,7 @@ public class JedisAircraftServerTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.ArrayIndexOutOfBoundsException: 1
-		//       at server.JedisAircraftServer.onMessage(JedisAircraftServer.java:21)
+		//       at server.JedisAircraftServer.onMessage(JedisAircraftServer.java:22)
 	}
 
 	/**
@@ -347,7 +349,7 @@ public class JedisAircraftServerTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testOnMessage_15()
@@ -361,7 +363,7 @@ public class JedisAircraftServerTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.ArrayIndexOutOfBoundsException: 1
-		//       at server.JedisAircraftServer.onMessage(JedisAircraftServer.java:21)
+		//       at server.JedisAircraftServer.onMessage(JedisAircraftServer.java:22)
 	}
 
 	/**
@@ -369,7 +371,7 @@ public class JedisAircraftServerTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testOnMessage_16()
@@ -383,7 +385,29 @@ public class JedisAircraftServerTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.ArrayIndexOutOfBoundsException: 1
-		//       at server.JedisAircraftServer.onMessage(JedisAircraftServer.java:21)
+		//       at server.JedisAircraftServer.onMessage(JedisAircraftServer.java:22)
+	}
+
+	/**
+	 * Run the void onMessage(String,String) method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 24.05.15 21:19
+	 */
+	@Test
+	public void testOnMessage_17()
+		throws Exception {
+		JedisAircraftServer fixture = new JedisAircraftServer();
+		String channel = "";
+		String message = "";
+
+		fixture.onMessage(channel, message);
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.ArrayIndexOutOfBoundsException: 1
+		//       at server.JedisAircraftServer.onMessage(JedisAircraftServer.java:22)
 	}
 
 	/**
@@ -391,7 +415,7 @@ public class JedisAircraftServerTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testOnPMessage_1()
@@ -411,7 +435,7 @@ public class JedisAircraftServerTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testOnPSubscribe_1()
@@ -430,7 +454,7 @@ public class JedisAircraftServerTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testOnPUnsubscribe_1()
@@ -449,7 +473,7 @@ public class JedisAircraftServerTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testOnSubscribe_1()
@@ -468,7 +492,7 @@ public class JedisAircraftServerTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testOnUnsubscribe_1()
@@ -488,7 +512,7 @@ public class JedisAircraftServerTest {
 	 * @throws Exception
 	 *         if the initialization fails for some reason
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Before
 	public void setUp()
@@ -502,7 +526,7 @@ public class JedisAircraftServerTest {
 	 * @throws Exception
 	 *         if the clean-up fails for some reason
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@After
 	public void tearDown()
@@ -515,7 +539,7 @@ public class JedisAircraftServerTest {
 	 *
 	 * @param args the command line arguments
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	public static void main(String[] args) {
 		new org.junit.runner.JUnitCore().run(JedisAircraftServerTest.class);

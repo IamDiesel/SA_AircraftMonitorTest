@@ -6,8 +6,8 @@ import static org.junit.Assert.*;
 /**
  * The class <code>AirborneVelocityMessageTest</code> contains tests for the class <code>{@link AirborneVelocityMessage}</code>.
  *
- * @generatedBy CodePro at 17.05.15 21:38
- * @author Dogma
+ * @generatedBy CodePro at 24.05.15 21:19
+ * @author Matthias
  * @version $Revision: 1.0 $
  */
 public class AirborneVelocityMessageTest {
@@ -16,7 +16,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testAirborneVelocityMessage_1()
@@ -30,10 +30,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertNotNull(result);
 	}
 
@@ -42,7 +45,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetAirspeed_1()
@@ -53,10 +56,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertEquals(0.0, result, 0.1);
 	}
 
@@ -65,7 +71,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetAirspeed_2()
@@ -76,10 +82,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertEquals(0.0, result, 0.1);
 	}
 
@@ -88,7 +97,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetAirspeed_3()
@@ -99,10 +108,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertEquals(0.0, result, 0.1);
 	}
 
@@ -111,7 +123,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetAirspeed_4()
@@ -122,10 +134,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertEquals(0.0, result, 0.1);
 	}
 
@@ -134,7 +149,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetAirspeed_5()
@@ -145,10 +160,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertEquals(0.0, result, 0.1);
 	}
 
@@ -157,7 +175,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetDeltaBaroAltoAttitude_1()
@@ -168,10 +186,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertEquals(0, result);
 	}
 
@@ -180,7 +201,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetDeltaBaroAltoAttitude_2()
@@ -191,10 +212,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertEquals(0, result);
 	}
 
@@ -203,7 +227,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetDeltaBaroAltoAttitude_3()
@@ -214,10 +238,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertEquals(0, result);
 	}
 
@@ -226,7 +253,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetDeltaBaroAltoAttitude_4()
@@ -237,10 +264,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertEquals(0, result);
 	}
 
@@ -249,7 +279,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetEastWestVelocity_1()
@@ -260,10 +290,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertEquals(0, result);
 	}
 
@@ -272,7 +305,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetEastWestVelocity_2()
@@ -283,10 +316,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertEquals(0, result);
 	}
 
@@ -295,7 +331,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetEastWestVelocity_3()
@@ -306,10 +342,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertEquals(0, result);
 	}
 
@@ -318,7 +357,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetGeoGreaterBaroAttitude_1()
@@ -329,10 +368,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertTrue(result);
 	}
 
@@ -341,7 +383,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetGeoGreaterBaroAttitude_2()
@@ -352,10 +394,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertTrue(result);
 	}
 
@@ -364,7 +409,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetGeoGreaterBaroAttitude_3()
@@ -375,10 +420,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertTrue(result);
 	}
 
@@ -387,7 +435,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetGeoGreaterBaroAttitude_4()
@@ -398,10 +446,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertTrue(result);
 	}
 
@@ -410,7 +461,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetHeadingDegrees_1()
@@ -421,10 +472,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertEquals(0.0, result, 0.1);
 	}
 
@@ -433,7 +487,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetHeadingDegrees_2()
@@ -444,10 +498,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertEquals(0.0, result, 0.1);
 	}
 
@@ -456,7 +513,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetHeadingDegrees_3()
@@ -467,10 +524,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertEquals(0.0, result, 0.1);
 	}
 
@@ -479,7 +539,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetHeadingDegrees_4()
@@ -490,10 +550,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertEquals(0.0, result, 0.1);
 	}
 
@@ -502,7 +565,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetHeadingDegrees_5()
@@ -513,10 +576,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertEquals(0.0, result, 0.1);
 	}
 
@@ -525,7 +591,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetHeadingDegrees_6()
@@ -536,10 +602,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertEquals(0.0, result, 0.1);
 	}
 
@@ -548,7 +617,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetHeadingStatusAvailable_1()
@@ -559,10 +628,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertTrue(result);
 	}
 
@@ -571,7 +643,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetHeadingStatusAvailable_2()
@@ -582,10 +654,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertTrue(result);
 	}
 
@@ -594,7 +669,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetMessageSubType_1()
@@ -605,10 +680,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertEquals(0, result);
 	}
 
@@ -617,7 +695,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetMessageSubType_2()
@@ -628,10 +706,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertEquals(0, result);
 	}
 
@@ -640,7 +721,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetMovingEast_1()
@@ -651,10 +732,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertTrue(result);
 	}
 
@@ -663,7 +747,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetMovingEast_2()
@@ -674,10 +758,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertTrue(result);
 	}
 
@@ -686,7 +773,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetMovingEast_3()
@@ -697,10 +784,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertTrue(result);
 	}
 
@@ -709,7 +799,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetMovingSouth_1()
@@ -720,10 +810,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertTrue(result);
 	}
 
@@ -732,7 +825,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetMovingSouth_2()
@@ -743,10 +836,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertTrue(result);
 	}
 
@@ -755,7 +851,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetMovingSouth_3()
@@ -766,10 +862,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertTrue(result);
 	}
 
@@ -778,7 +877,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetMovingWest_1()
@@ -789,10 +888,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertTrue(result);
 	}
 
@@ -801,7 +903,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetMovingWest_2()
@@ -812,10 +914,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertTrue(result);
 	}
 
@@ -824,7 +929,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetMovingWest_3()
@@ -835,10 +940,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertTrue(result);
 	}
 
@@ -847,7 +955,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetNavigationAccuracy_1()
@@ -858,10 +966,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertEquals(0.0, result, 0.1);
 	}
 
@@ -870,7 +981,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetNavigationAccuracy_2()
@@ -881,10 +992,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertEquals(0.0, result, 0.1);
 	}
 
@@ -893,7 +1007,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetNavigationAccuracy_3()
@@ -904,10 +1018,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertEquals(0.0, result, 0.1);
 	}
 
@@ -916,7 +1033,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetNavigationAccuracy_4()
@@ -927,10 +1044,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertEquals(0.0, result, 0.1);
 	}
 
@@ -939,7 +1059,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetNavigationAccuracy_5()
@@ -950,10 +1070,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertEquals(0.0, result, 0.1);
 	}
 
@@ -962,7 +1085,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetNavigationAccuracy_6()
@@ -973,10 +1096,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertEquals(0.0, result, 0.1);
 	}
 
@@ -985,7 +1111,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetNavigationAccuracy_7()
@@ -996,10 +1122,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertEquals(0.0, result, 0.1);
 	}
 
@@ -1008,7 +1137,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetNorthSouthVelocity_1()
@@ -1019,10 +1148,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertEquals(0, result);
 	}
 
@@ -1031,7 +1163,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetNorthSouthVelocity_2()
@@ -1042,10 +1174,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertEquals(0, result);
 	}
 
@@ -1054,7 +1189,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetNorthSouthVelocity_3()
@@ -1065,10 +1200,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertEquals(0, result);
 	}
 
@@ -1077,7 +1215,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetTrueAirspeedType_1()
@@ -1088,10 +1226,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertTrue(result);
 	}
 
@@ -1100,7 +1241,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetTrueAirspeedType_2()
@@ -1111,10 +1252,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertTrue(result);
 	}
 
@@ -1123,7 +1267,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetVerticalRate_1()
@@ -1134,10 +1278,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertEquals(0, result);
 	}
 
@@ -1146,7 +1293,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetVerticalRate_2()
@@ -1157,10 +1304,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertEquals(0, result);
 	}
 
@@ -1169,7 +1319,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetVerticalRate_3()
@@ -1180,10 +1330,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertEquals(0, result);
 	}
 
@@ -1192,7 +1345,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetVerticalRateSign_1()
@@ -1203,10 +1356,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertEquals(0, result);
 	}
 
@@ -1215,7 +1371,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetVerticalRateSign_2()
@@ -1226,10 +1382,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertEquals(0, result);
 	}
 
@@ -1238,7 +1397,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetVerticalRateSource_1()
@@ -1249,10 +1408,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertEquals(0, result);
 	}
 
@@ -1261,7 +1423,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetVerticalRateSource_2()
@@ -1272,10 +1434,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertEquals(0, result);
 	}
 
@@ -1284,7 +1449,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testPrint_1()
@@ -1295,10 +1460,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 	}
 
 	/**
@@ -1306,7 +1474,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testPrint_2()
@@ -1317,10 +1485,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 	}
 
 	/**
@@ -1328,7 +1499,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testPrint_3()
@@ -1339,10 +1510,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 	}
 
 	/**
@@ -1350,7 +1524,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testPrint_4()
@@ -1361,10 +1535,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 	}
 
 	/**
@@ -1372,7 +1549,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testPrint_5()
@@ -1383,10 +1560,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 	}
 
 	/**
@@ -1394,7 +1574,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testToJedisString_1()
@@ -1405,10 +1585,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertNotNull(result);
 	}
 
@@ -1417,7 +1600,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testToString_1()
@@ -1428,10 +1611,13 @@ public class AirborneVelocityMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
+		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
 		assertNotNull(result);
 	}
 
@@ -1441,7 +1627,7 @@ public class AirborneVelocityMessageTest {
 	 * @throws Exception
 	 *         if the initialization fails for some reason
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Before
 	public void setUp()
@@ -1455,7 +1641,7 @@ public class AirborneVelocityMessageTest {
 	 * @throws Exception
 	 *         if the clean-up fails for some reason
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@After
 	public void tearDown()
@@ -1468,7 +1654,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @param args the command line arguments
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	public static void main(String[] args) {
 		new org.junit.runner.JUnitCore().run(AirborneVelocityMessageTest.class);

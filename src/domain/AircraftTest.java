@@ -2,12 +2,13 @@ package domain;
 
 import org.junit.*;
 import static org.junit.Assert.*;
+import exception.AircraftException;
 
 /**
  * The class <code>AircraftTest</code> contains tests for the class <code>{@link Aircraft}</code>.
  *
- * @generatedBy CodePro at 17.05.15 21:38
- * @author Dogma
+ * @generatedBy CodePro at 24.05.15 21:19
+ * @author Matthias
  * @version $Revision: 1.0 $
  */
 public class AircraftTest {
@@ -16,7 +17,7 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testAircraft_1()
@@ -28,13 +29,13 @@ public class AircraftTest {
 		// add additional test code here
 		assertNotNull(result);
 		assertEquals(1, result.getID());
-		assertEquals("1", result.toJedisKey());
-		assertEquals(-1.0, result.getVeloAngle(), 1.0);
-		assertEquals(-1.0, result.getVelocity(), 1.0);
+		assertEquals("1,,-1.0,-1.0,-1.0,-1.0,0,,", result.toJedisString());
 		assertEquals(null, result.getOdd());
+		assertEquals(-1.0, result.getVelocity(), 1.0);
+		assertEquals(-1.0, result.getVeloAngle(), 1.0);
 		assertEquals(null, result.getEven());
 		assertEquals(0, result.getLastOdd());
-		assertEquals("1,,-1.0,-1.0,-1.0,-1.0,0,,", result.toJedisString());
+		assertEquals("1", result.toJedisKey());
 	}
 
 	/**
@@ -42,9 +43,9 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
-	@Test
+	@Test(expected = exception.AircraftException.class)
 	public void testAircraft_2()
 		throws Exception {
 		String jedisString = "";
@@ -52,12 +53,6 @@ public class AircraftTest {
 		Aircraft result = new Aircraft(jedisString);
 
 		// add additional test code here
-		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.NumberFormatException: For input string: ""
-		//       at java.lang.NumberFormatException.forInputString(Unknown Source)
-		//       at java.lang.Integer.parseInt(Unknown Source)
-		//       at java.lang.Integer.parseInt(Unknown Source)
-		//       at domain.Aircraft.<init>(Aircraft.java:27)
 		assertNotNull(result);
 	}
 
@@ -66,22 +61,16 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
-	@Test
+	@Test(expected = exception.AircraftException.class)
 	public void testAircraft_3()
 		throws Exception {
-		String jedisString = "";
+		String jedisString = "a";
 
 		Aircraft result = new Aircraft(jedisString);
 
 		// add additional test code here
-		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.NumberFormatException: For input string: ""
-		//       at java.lang.NumberFormatException.forInputString(Unknown Source)
-		//       at java.lang.Integer.parseInt(Unknown Source)
-		//       at java.lang.Integer.parseInt(Unknown Source)
-		//       at domain.Aircraft.<init>(Aircraft.java:27)
 		assertNotNull(result);
 	}
 
@@ -90,22 +79,16 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
-	@Test
+	@Test(expected = exception.AircraftException.class)
 	public void testAircraft_4()
 		throws Exception {
-		String jedisString = "";
+		String jedisString = "a";
 
 		Aircraft result = new Aircraft(jedisString);
 
 		// add additional test code here
-		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.NumberFormatException: For input string: ""
-		//       at java.lang.NumberFormatException.forInputString(Unknown Source)
-		//       at java.lang.Integer.parseInt(Unknown Source)
-		//       at java.lang.Integer.parseInt(Unknown Source)
-		//       at domain.Aircraft.<init>(Aircraft.java:27)
 		assertNotNull(result);
 	}
 
@@ -114,22 +97,16 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
-	@Test
+	@Test(expected = exception.AircraftException.class)
 	public void testAircraft_5()
 		throws Exception {
-		String jedisString = "";
+		String jedisString = "a";
 
 		Aircraft result = new Aircraft(jedisString);
 
 		// add additional test code here
-		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.NumberFormatException: For input string: ""
-		//       at java.lang.NumberFormatException.forInputString(Unknown Source)
-		//       at java.lang.Integer.parseInt(Unknown Source)
-		//       at java.lang.Integer.parseInt(Unknown Source)
-		//       at domain.Aircraft.<init>(Aircraft.java:27)
 		assertNotNull(result);
 	}
 
@@ -138,22 +115,16 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
-	@Test
+	@Test(expected = exception.AircraftException.class)
 	public void testAircraft_6()
 		throws Exception {
-		String jedisString = "";
+		String jedisString = "a";
 
 		Aircraft result = new Aircraft(jedisString);
 
 		// add additional test code here
-		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.NumberFormatException: For input string: ""
-		//       at java.lang.NumberFormatException.forInputString(Unknown Source)
-		//       at java.lang.Integer.parseInt(Unknown Source)
-		//       at java.lang.Integer.parseInt(Unknown Source)
-		//       at domain.Aircraft.<init>(Aircraft.java:27)
 		assertNotNull(result);
 	}
 
@@ -162,22 +133,16 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
-	@Test
+	@Test(expected = exception.AircraftException.class)
 	public void testAircraft_7()
 		throws Exception {
-		String jedisString = "";
+		String jedisString = "a";
 
 		Aircraft result = new Aircraft(jedisString);
 
 		// add additional test code here
-		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.NumberFormatException: For input string: ""
-		//       at java.lang.NumberFormatException.forInputString(Unknown Source)
-		//       at java.lang.Integer.parseInt(Unknown Source)
-		//       at java.lang.Integer.parseInt(Unknown Source)
-		//       at domain.Aircraft.<init>(Aircraft.java:27)
 		assertNotNull(result);
 	}
 
@@ -186,22 +151,16 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
-	@Test
+	@Test(expected = exception.AircraftException.class)
 	public void testAircraft_8()
 		throws Exception {
-		String jedisString = "";
+		String jedisString = "a";
 
 		Aircraft result = new Aircraft(jedisString);
 
 		// add additional test code here
-		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.NumberFormatException: For input string: ""
-		//       at java.lang.NumberFormatException.forInputString(Unknown Source)
-		//       at java.lang.Integer.parseInt(Unknown Source)
-		//       at java.lang.Integer.parseInt(Unknown Source)
-		//       at domain.Aircraft.<init>(Aircraft.java:27)
 		assertNotNull(result);
 	}
 
@@ -210,22 +169,16 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
-	@Test
+	@Test(expected = exception.AircraftException.class)
 	public void testAircraft_9()
 		throws Exception {
-		String jedisString = "";
+		String jedisString = "a";
 
 		Aircraft result = new Aircraft(jedisString);
 
 		// add additional test code here
-		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.NumberFormatException: For input string: ""
-		//       at java.lang.NumberFormatException.forInputString(Unknown Source)
-		//       at java.lang.Integer.parseInt(Unknown Source)
-		//       at java.lang.Integer.parseInt(Unknown Source)
-		//       at domain.Aircraft.<init>(Aircraft.java:27)
 		assertNotNull(result);
 	}
 
@@ -234,22 +187,16 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
-	@Test
+	@Test(expected = exception.AircraftException.class)
 	public void testAircraft_10()
 		throws Exception {
-		String jedisString = "";
+		String jedisString = "a";
 
 		Aircraft result = new Aircraft(jedisString);
 
 		// add additional test code here
-		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.NumberFormatException: For input string: ""
-		//       at java.lang.NumberFormatException.forInputString(Unknown Source)
-		//       at java.lang.Integer.parseInt(Unknown Source)
-		//       at java.lang.Integer.parseInt(Unknown Source)
-		//       at domain.Aircraft.<init>(Aircraft.java:27)
 		assertNotNull(result);
 	}
 
@@ -258,22 +205,16 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
-	@Test
+	@Test(expected = exception.AircraftException.class)
 	public void testAircraft_11()
 		throws Exception {
-		String jedisString = "";
+		String jedisString = "a";
 
 		Aircraft result = new Aircraft(jedisString);
 
 		// add additional test code here
-		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.NumberFormatException: For input string: ""
-		//       at java.lang.NumberFormatException.forInputString(Unknown Source)
-		//       at java.lang.Integer.parseInt(Unknown Source)
-		//       at java.lang.Integer.parseInt(Unknown Source)
-		//       at domain.Aircraft.<init>(Aircraft.java:27)
 		assertNotNull(result);
 	}
 
@@ -282,22 +223,16 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
-	@Test
+	@Test(expected = exception.AircraftException.class)
 	public void testAircraft_12()
 		throws Exception {
-		String jedisString = "";
+		String jedisString = "a";
 
 		Aircraft result = new Aircraft(jedisString);
 
 		// add additional test code here
-		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.NumberFormatException: For input string: ""
-		//       at java.lang.NumberFormatException.forInputString(Unknown Source)
-		//       at java.lang.Integer.parseInt(Unknown Source)
-		//       at java.lang.Integer.parseInt(Unknown Source)
-		//       at domain.Aircraft.<init>(Aircraft.java:27)
 		assertNotNull(result);
 	}
 
@@ -306,22 +241,16 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
-	@Test
+	@Test(expected = exception.AircraftException.class)
 	public void testAircraft_13()
 		throws Exception {
-		String jedisString = "";
+		String jedisString = "a";
 
 		Aircraft result = new Aircraft(jedisString);
 
 		// add additional test code here
-		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.NumberFormatException: For input string: ""
-		//       at java.lang.NumberFormatException.forInputString(Unknown Source)
-		//       at java.lang.Integer.parseInt(Unknown Source)
-		//       at java.lang.Integer.parseInt(Unknown Source)
-		//       at domain.Aircraft.<init>(Aircraft.java:27)
 		assertNotNull(result);
 	}
 
@@ -330,12 +259,12 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
-	@Test(expected = java.lang.NumberFormatException.class)
+	@Test(expected = exception.AircraftException.class)
 	public void testAircraft_14()
 		throws Exception {
-		String jedisString = "";
+		String jedisString = "a";
 
 		Aircraft result = new Aircraft(jedisString);
 
@@ -348,12 +277,12 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
-	@Test(expected = java.lang.NumberFormatException.class)
+	@Test(expected = exception.AircraftException.class)
 	public void testAircraft_15()
 		throws Exception {
-		String jedisString = "";
+		String jedisString = "a";
 
 		Aircraft result = new Aircraft(jedisString);
 
@@ -366,12 +295,12 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
-	@Test(expected = java.lang.NumberFormatException.class)
+	@Test(expected = exception.AircraftException.class)
 	public void testAircraft_16()
 		throws Exception {
-		String jedisString = "";
+		String jedisString = "a";
 
 		Aircraft result = new Aircraft(jedisString);
 
@@ -384,12 +313,12 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
-	@Test(expected = java.lang.NumberFormatException.class)
+	@Test(expected = exception.AircraftException.class)
 	public void testAircraft_17()
 		throws Exception {
-		String jedisString = "";
+		String jedisString = "a";
 
 		Aircraft result = new Aircraft(jedisString);
 
@@ -402,28 +331,31 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetEven_1()
 		throws Exception {
 		Aircraft fixture = new Aircraft(1);
-		fixture.setEvenMsg(new AirbornePositionMessage(""));
 		fixture.setOddMsg(new AirbornePositionMessage(""));
 		fixture.setFlightNo("");
+		fixture.setEvenMsg(new AirbornePositionMessage(""));
+		fixture.setLatitude(1.0);
+		fixture.setLastOdd(1);
 		fixture.setVeloAngle(1.0);
 		fixture.setVelocity(1.0);
 		fixture.setLongitude(1.0);
-		fixture.setLastOdd(1);
-		fixture.setLatitude(1.0);
 
 		AirbornePositionMessage result = fixture.getEven();
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at domain.AdsMessage.<init>(AdsMessage.java:30)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
+		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 		assertNotNull(result);
 	}
 
@@ -432,28 +364,31 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetEven_2()
 		throws Exception {
 		Aircraft fixture = new Aircraft(1);
-		fixture.setEvenMsg((AirbornePositionMessage) null);
 		fixture.setOddMsg(new AirbornePositionMessage(""));
 		fixture.setFlightNo("");
+		fixture.setEvenMsg((AirbornePositionMessage) null);
+		fixture.setLatitude(1.0);
+		fixture.setLastOdd(1);
 		fixture.setVeloAngle(1.0);
 		fixture.setVelocity(1.0);
 		fixture.setLongitude(1.0);
-		fixture.setLastOdd(1);
-		fixture.setLatitude(1.0);
 
 		AirbornePositionMessage result = fixture.getEven();
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at domain.AdsMessage.<init>(AdsMessage.java:30)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
+		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 		assertNotNull(result);
 	}
 
@@ -462,28 +397,31 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetID_1()
 		throws Exception {
 		Aircraft fixture = new Aircraft(1);
-		fixture.setEvenMsg(new AirbornePositionMessage(""));
 		fixture.setOddMsg(new AirbornePositionMessage(""));
 		fixture.setFlightNo("");
+		fixture.setEvenMsg(new AirbornePositionMessage(""));
+		fixture.setLatitude(1.0);
+		fixture.setLastOdd(1);
 		fixture.setVeloAngle(1.0);
 		fixture.setVelocity(1.0);
 		fixture.setLongitude(1.0);
-		fixture.setLastOdd(1);
-		fixture.setLatitude(1.0);
 
 		int result = fixture.getID();
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at domain.AdsMessage.<init>(AdsMessage.java:30)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
+		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 		assertEquals(0, result);
 	}
 
@@ -492,28 +430,31 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetLastOdd_1()
 		throws Exception {
 		Aircraft fixture = new Aircraft(1);
-		fixture.setEvenMsg(new AirbornePositionMessage(""));
 		fixture.setOddMsg(new AirbornePositionMessage(""));
 		fixture.setFlightNo("");
+		fixture.setEvenMsg(new AirbornePositionMessage(""));
+		fixture.setLatitude(1.0);
+		fixture.setLastOdd(1);
 		fixture.setVeloAngle(1.0);
 		fixture.setVelocity(1.0);
 		fixture.setLongitude(1.0);
-		fixture.setLastOdd(1);
-		fixture.setLatitude(1.0);
 
 		int result = fixture.getLastOdd();
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at domain.AdsMessage.<init>(AdsMessage.java:30)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
+		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 		assertEquals(0, result);
 	}
 
@@ -522,28 +463,31 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetOdd_1()
 		throws Exception {
 		Aircraft fixture = new Aircraft(1);
-		fixture.setEvenMsg(new AirbornePositionMessage(""));
 		fixture.setOddMsg(new AirbornePositionMessage(""));
 		fixture.setFlightNo("");
+		fixture.setEvenMsg(new AirbornePositionMessage(""));
+		fixture.setLatitude(1.0);
+		fixture.setLastOdd(1);
 		fixture.setVeloAngle(1.0);
 		fixture.setVelocity(1.0);
 		fixture.setLongitude(1.0);
-		fixture.setLastOdd(1);
-		fixture.setLatitude(1.0);
 
 		AirbornePositionMessage result = fixture.getOdd();
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at domain.AdsMessage.<init>(AdsMessage.java:30)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
+		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 		assertNotNull(result);
 	}
 
@@ -552,28 +496,31 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetOdd_2()
 		throws Exception {
 		Aircraft fixture = new Aircraft(1);
-		fixture.setEvenMsg(new AirbornePositionMessage(""));
 		fixture.setOddMsg((AirbornePositionMessage) null);
 		fixture.setFlightNo("");
+		fixture.setEvenMsg(new AirbornePositionMessage(""));
+		fixture.setLatitude(1.0);
+		fixture.setLastOdd(1);
 		fixture.setVeloAngle(1.0);
 		fixture.setVelocity(1.0);
 		fixture.setLongitude(1.0);
-		fixture.setLastOdd(1);
-		fixture.setLatitude(1.0);
 
 		AirbornePositionMessage result = fixture.getOdd();
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at domain.AdsMessage.<init>(AdsMessage.java:30)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
+		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 		assertNotNull(result);
 	}
 
@@ -582,28 +529,31 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetVeloAngle_1()
 		throws Exception {
 		Aircraft fixture = new Aircraft(1);
-		fixture.setEvenMsg(new AirbornePositionMessage(""));
 		fixture.setOddMsg(new AirbornePositionMessage(""));
 		fixture.setFlightNo("");
+		fixture.setEvenMsg(new AirbornePositionMessage(""));
+		fixture.setLatitude(1.0);
+		fixture.setLastOdd(1);
 		fixture.setVeloAngle(1.0);
 		fixture.setVelocity(1.0);
 		fixture.setLongitude(1.0);
-		fixture.setLastOdd(1);
-		fixture.setLatitude(1.0);
 
 		double result = fixture.getVeloAngle();
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at domain.AdsMessage.<init>(AdsMessage.java:30)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
+		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 		assertEquals(0.0, result, 0.1);
 	}
 
@@ -612,28 +562,31 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetVelocity_1()
 		throws Exception {
 		Aircraft fixture = new Aircraft(1);
-		fixture.setEvenMsg(new AirbornePositionMessage(""));
 		fixture.setOddMsg(new AirbornePositionMessage(""));
 		fixture.setFlightNo("");
+		fixture.setEvenMsg(new AirbornePositionMessage(""));
+		fixture.setLatitude(1.0);
+		fixture.setLastOdd(1);
 		fixture.setVeloAngle(1.0);
 		fixture.setVelocity(1.0);
 		fixture.setLongitude(1.0);
-		fixture.setLastOdd(1);
-		fixture.setLatitude(1.0);
 
 		double result = fixture.getVelocity();
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at domain.AdsMessage.<init>(AdsMessage.java:30)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
+		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 		assertEquals(0.0, result, 0.1);
 	}
 
@@ -642,28 +595,31 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testPrint_1()
 		throws Exception {
 		Aircraft fixture = new Aircraft(1);
-		fixture.setEvenMsg(new AirbornePositionMessage(""));
 		fixture.setOddMsg(new AirbornePositionMessage(""));
 		fixture.setFlightNo("");
+		fixture.setEvenMsg(new AirbornePositionMessage(""));
+		fixture.setLatitude(1.0);
+		fixture.setLastOdd(1);
 		fixture.setVeloAngle(1.0);
 		fixture.setVelocity(1.0);
 		fixture.setLongitude(1.0);
-		fixture.setLastOdd(1);
-		fixture.setLatitude(1.0);
 
 		fixture.print();
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at domain.AdsMessage.<init>(AdsMessage.java:30)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
+		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 	}
 
 	/**
@@ -671,28 +627,31 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testPrint_2()
 		throws Exception {
 		Aircraft fixture = new Aircraft(1);
-		fixture.setEvenMsg(new AirbornePositionMessage(""));
 		fixture.setOddMsg(new AirbornePositionMessage(""));
 		fixture.setFlightNo("");
+		fixture.setEvenMsg(new AirbornePositionMessage(""));
+		fixture.setLatitude(1.0);
+		fixture.setLastOdd(1);
 		fixture.setVeloAngle(1.0);
 		fixture.setVelocity(-1);
 		fixture.setLongitude(1.0);
-		fixture.setLastOdd(1);
-		fixture.setLatitude(1.0);
 
 		fixture.print();
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at domain.AdsMessage.<init>(AdsMessage.java:30)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
+		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 	}
 
 	/**
@@ -700,28 +659,31 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testPrint_3()
 		throws Exception {
 		Aircraft fixture = new Aircraft(1);
-		fixture.setEvenMsg(new AirbornePositionMessage(""));
 		fixture.setOddMsg(new AirbornePositionMessage(""));
 		fixture.setFlightNo("");
+		fixture.setEvenMsg(new AirbornePositionMessage(""));
+		fixture.setLatitude(1.0);
+		fixture.setLastOdd(1);
 		fixture.setVeloAngle(-1);
 		fixture.setVelocity(1.0);
 		fixture.setLongitude(1.0);
-		fixture.setLastOdd(1);
-		fixture.setLatitude(1.0);
 
 		fixture.print();
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at domain.AdsMessage.<init>(AdsMessage.java:30)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
+		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 	}
 
 	/**
@@ -729,28 +691,31 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testPrint_4()
 		throws Exception {
 		Aircraft fixture = new Aircraft(1);
-		fixture.setEvenMsg(new AirbornePositionMessage(""));
 		fixture.setOddMsg(new AirbornePositionMessage(""));
 		fixture.setFlightNo("");
+		fixture.setEvenMsg(new AirbornePositionMessage(""));
+		fixture.setLatitude(-1);
+		fixture.setLastOdd(1);
 		fixture.setVeloAngle(1.0);
 		fixture.setVelocity(1.0);
 		fixture.setLongitude(1.0);
-		fixture.setLastOdd(1);
-		fixture.setLatitude(-1);
 
 		fixture.print();
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at domain.AdsMessage.<init>(AdsMessage.java:30)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
+		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 	}
 
 	/**
@@ -758,28 +723,31 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testPrint_5()
 		throws Exception {
 		Aircraft fixture = new Aircraft(1);
-		fixture.setEvenMsg(new AirbornePositionMessage(""));
 		fixture.setOddMsg(new AirbornePositionMessage(""));
 		fixture.setFlightNo("");
+		fixture.setEvenMsg(new AirbornePositionMessage(""));
+		fixture.setLatitude(-1);
+		fixture.setLastOdd(1);
 		fixture.setVeloAngle(-1);
 		fixture.setVelocity(-1);
 		fixture.setLongitude(1.0);
-		fixture.setLastOdd(1);
-		fixture.setLatitude(-1);
 
 		fixture.print();
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at domain.AdsMessage.<init>(AdsMessage.java:30)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
+		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 	}
 
 	/**
@@ -787,28 +755,31 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testPrint_6()
 		throws Exception {
 		Aircraft fixture = new Aircraft(1);
-		fixture.setEvenMsg(new AirbornePositionMessage(""));
 		fixture.setOddMsg(new AirbornePositionMessage(""));
 		fixture.setFlightNo("");
+		fixture.setEvenMsg(new AirbornePositionMessage(""));
+		fixture.setLatitude(1.0);
+		fixture.setLastOdd(1);
 		fixture.setVeloAngle(1.0);
 		fixture.setVelocity(1.0);
 		fixture.setLongitude(-1);
-		fixture.setLastOdd(1);
-		fixture.setLatitude(1.0);
 
 		fixture.print();
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at domain.AdsMessage.<init>(AdsMessage.java:30)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
+		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 	}
 
 	/**
@@ -816,28 +787,31 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testPrint_7()
 		throws Exception {
 		Aircraft fixture = new Aircraft(1);
-		fixture.setEvenMsg(new AirbornePositionMessage(""));
 		fixture.setOddMsg((AirbornePositionMessage) null);
 		fixture.setFlightNo("");
+		fixture.setEvenMsg(new AirbornePositionMessage(""));
+		fixture.setLatitude(1.0);
+		fixture.setLastOdd(1);
 		fixture.setVeloAngle(1.0);
 		fixture.setVelocity(1.0);
 		fixture.setLongitude(1.0);
-		fixture.setLastOdd(1);
-		fixture.setLatitude(1.0);
 
 		fixture.print();
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at domain.AdsMessage.<init>(AdsMessage.java:30)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
+		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 	}
 
 	/**
@@ -845,28 +819,31 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testPrint_8()
 		throws Exception {
 		Aircraft fixture = new Aircraft(1);
-		fixture.setEvenMsg(new AirbornePositionMessage(""));
 		fixture.setOddMsg((AirbornePositionMessage) null);
 		fixture.setFlightNo("");
+		fixture.setEvenMsg(new AirbornePositionMessage(""));
+		fixture.setLatitude(-1);
+		fixture.setLastOdd(1);
 		fixture.setVeloAngle(-1);
 		fixture.setVelocity(-1);
 		fixture.setLongitude(-1);
-		fixture.setLastOdd(1);
-		fixture.setLatitude(-1);
 
 		fixture.print();
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at domain.AdsMessage.<init>(AdsMessage.java:30)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
+		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 	}
 
 	/**
@@ -874,28 +851,31 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testPrint_9()
 		throws Exception {
 		Aircraft fixture = new Aircraft(1);
-		fixture.setEvenMsg((AirbornePositionMessage) null);
 		fixture.setOddMsg(new AirbornePositionMessage(""));
 		fixture.setFlightNo("");
+		fixture.setEvenMsg((AirbornePositionMessage) null);
+		fixture.setLatitude(1.0);
+		fixture.setLastOdd(1);
 		fixture.setVeloAngle(1.0);
 		fixture.setVelocity(1.0);
 		fixture.setLongitude(1.0);
-		fixture.setLastOdd(1);
-		fixture.setLatitude(1.0);
 
 		fixture.print();
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at domain.AdsMessage.<init>(AdsMessage.java:30)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
+		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 	}
 
 	/**
@@ -903,28 +883,31 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testPrint_10()
 		throws Exception {
 		Aircraft fixture = new Aircraft(1);
-		fixture.setEvenMsg((AirbornePositionMessage) null);
 		fixture.setOddMsg(new AirbornePositionMessage(""));
 		fixture.setFlightNo("");
+		fixture.setEvenMsg((AirbornePositionMessage) null);
+		fixture.setLatitude(-1);
+		fixture.setLastOdd(1);
 		fixture.setVeloAngle(-1);
 		fixture.setVelocity(-1);
 		fixture.setLongitude(-1);
-		fixture.setLastOdd(1);
-		fixture.setLatitude(-1);
 
 		fixture.print();
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at domain.AdsMessage.<init>(AdsMessage.java:30)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
+		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 	}
 
 	/**
@@ -932,20 +915,20 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testPrint_11()
 		throws Exception {
 		Aircraft fixture = new Aircraft(1);
-		fixture.setEvenMsg((AirbornePositionMessage) null);
 		fixture.setOddMsg((AirbornePositionMessage) null);
 		fixture.setFlightNo("");
+		fixture.setEvenMsg((AirbornePositionMessage) null);
+		fixture.setLatitude(-1);
+		fixture.setLastOdd(1);
 		fixture.setVeloAngle(-1);
 		fixture.setVelocity(-1);
 		fixture.setLongitude(1.0);
-		fixture.setLastOdd(1);
-		fixture.setLatitude(-1);
 
 		fixture.print();
 
@@ -957,20 +940,20 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testPrint_12()
 		throws Exception {
 		Aircraft fixture = new Aircraft(1);
-		fixture.setEvenMsg((AirbornePositionMessage) null);
 		fixture.setOddMsg((AirbornePositionMessage) null);
 		fixture.setFlightNo("");
+		fixture.setEvenMsg((AirbornePositionMessage) null);
+		fixture.setLatitude(1.0);
+		fixture.setLastOdd(1);
 		fixture.setVeloAngle(1.0);
 		fixture.setVelocity(1.0);
 		fixture.setLongitude(-1);
-		fixture.setLastOdd(1);
-		fixture.setLatitude(1.0);
 
 		fixture.print();
 
@@ -982,20 +965,20 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testPrint_13()
 		throws Exception {
 		Aircraft fixture = new Aircraft(1);
-		fixture.setEvenMsg((AirbornePositionMessage) null);
 		fixture.setOddMsg((AirbornePositionMessage) null);
 		fixture.setFlightNo("");
+		fixture.setEvenMsg((AirbornePositionMessage) null);
+		fixture.setLatitude(1.0);
+		fixture.setLastOdd(1);
 		fixture.setVeloAngle(-1);
 		fixture.setVelocity(-1);
 		fixture.setLongitude(-1);
-		fixture.setLastOdd(1);
-		fixture.setLatitude(1.0);
 
 		fixture.print();
 
@@ -1007,20 +990,20 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testPrint_14()
 		throws Exception {
 		Aircraft fixture = new Aircraft(1);
-		fixture.setEvenMsg((AirbornePositionMessage) null);
 		fixture.setOddMsg((AirbornePositionMessage) null);
 		fixture.setFlightNo("");
+		fixture.setEvenMsg((AirbornePositionMessage) null);
+		fixture.setLatitude(-1);
+		fixture.setLastOdd(1);
 		fixture.setVeloAngle(1.0);
 		fixture.setVelocity(-1);
 		fixture.setLongitude(-1);
-		fixture.setLastOdd(1);
-		fixture.setLatitude(-1);
 
 		fixture.print();
 
@@ -1032,20 +1015,20 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testPrint_15()
 		throws Exception {
 		Aircraft fixture = new Aircraft(1);
-		fixture.setEvenMsg((AirbornePositionMessage) null);
 		fixture.setOddMsg((AirbornePositionMessage) null);
 		fixture.setFlightNo("");
+		fixture.setEvenMsg((AirbornePositionMessage) null);
+		fixture.setLatitude(-1);
+		fixture.setLastOdd(1);
 		fixture.setVeloAngle(-1);
 		fixture.setVelocity(1.0);
 		fixture.setLongitude(-1);
-		fixture.setLastOdd(1);
-		fixture.setLatitude(-1);
 
 		fixture.print();
 
@@ -1057,20 +1040,20 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testPrint_16()
 		throws Exception {
 		Aircraft fixture = new Aircraft(1);
-		fixture.setEvenMsg((AirbornePositionMessage) null);
 		fixture.setOddMsg((AirbornePositionMessage) null);
 		fixture.setFlightNo("");
+		fixture.setEvenMsg((AirbornePositionMessage) null);
+		fixture.setLatitude(-1);
+		fixture.setLastOdd(1);
 		fixture.setVeloAngle(-1);
 		fixture.setVelocity(-1);
 		fixture.setLongitude(-1);
-		fixture.setLastOdd(1);
-		fixture.setLatitude(-1);
 
 		fixture.print();
 
@@ -1082,29 +1065,32 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testSetEvenMsg_1()
 		throws Exception {
 		Aircraft fixture = new Aircraft(1);
-		fixture.setEvenMsg(new AirbornePositionMessage(""));
 		fixture.setOddMsg(new AirbornePositionMessage(""));
 		fixture.setFlightNo("");
+		fixture.setEvenMsg(new AirbornePositionMessage(""));
+		fixture.setLatitude(1.0);
+		fixture.setLastOdd(1);
 		fixture.setVeloAngle(1.0);
 		fixture.setVelocity(1.0);
 		fixture.setLongitude(1.0);
-		fixture.setLastOdd(1);
-		fixture.setLatitude(1.0);
 		AirbornePositionMessage even = new AirbornePositionMessage("");
 
 		fixture.setEvenMsg(even);
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at domain.AdsMessage.<init>(AdsMessage.java:30)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
+		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 	}
 
 	/**
@@ -1112,29 +1098,32 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testSetFlightNo_1()
 		throws Exception {
 		Aircraft fixture = new Aircraft(1);
-		fixture.setEvenMsg(new AirbornePositionMessage(""));
 		fixture.setOddMsg(new AirbornePositionMessage(""));
 		fixture.setFlightNo("");
+		fixture.setEvenMsg(new AirbornePositionMessage(""));
+		fixture.setLatitude(1.0);
+		fixture.setLastOdd(1);
 		fixture.setVeloAngle(1.0);
 		fixture.setVelocity(1.0);
 		fixture.setLongitude(1.0);
-		fixture.setLastOdd(1);
-		fixture.setLatitude(1.0);
 		String no = "";
 
 		fixture.setFlightNo(no);
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at domain.AdsMessage.<init>(AdsMessage.java:30)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
+		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 	}
 
 	/**
@@ -1142,29 +1131,32 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testSetLastOdd_1()
 		throws Exception {
 		Aircraft fixture = new Aircraft(1);
-		fixture.setEvenMsg(new AirbornePositionMessage(""));
 		fixture.setOddMsg(new AirbornePositionMessage(""));
 		fixture.setFlightNo("");
+		fixture.setEvenMsg(new AirbornePositionMessage(""));
+		fixture.setLatitude(1.0);
+		fixture.setLastOdd(1);
 		fixture.setVeloAngle(1.0);
 		fixture.setVelocity(1.0);
 		fixture.setLongitude(1.0);
-		fixture.setLastOdd(1);
-		fixture.setLatitude(1.0);
 		int i = 1;
 
 		fixture.setLastOdd(i);
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at domain.AdsMessage.<init>(AdsMessage.java:30)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
+		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 	}
 
 	/**
@@ -1172,29 +1164,32 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testSetLatitude_1()
 		throws Exception {
 		Aircraft fixture = new Aircraft(1);
-		fixture.setEvenMsg(new AirbornePositionMessage(""));
 		fixture.setOddMsg(new AirbornePositionMessage(""));
 		fixture.setFlightNo("");
+		fixture.setEvenMsg(new AirbornePositionMessage(""));
+		fixture.setLatitude(1.0);
+		fixture.setLastOdd(1);
 		fixture.setVeloAngle(1.0);
 		fixture.setVelocity(1.0);
 		fixture.setLongitude(1.0);
-		fixture.setLastOdd(1);
-		fixture.setLatitude(1.0);
 		double lat = 1.0;
 
 		fixture.setLatitude(lat);
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at domain.AdsMessage.<init>(AdsMessage.java:30)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
+		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 	}
 
 	/**
@@ -1202,29 +1197,32 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testSetLongitude_1()
 		throws Exception {
 		Aircraft fixture = new Aircraft(1);
-		fixture.setEvenMsg(new AirbornePositionMessage(""));
 		fixture.setOddMsg(new AirbornePositionMessage(""));
 		fixture.setFlightNo("");
+		fixture.setEvenMsg(new AirbornePositionMessage(""));
+		fixture.setLatitude(1.0);
+		fixture.setLastOdd(1);
 		fixture.setVeloAngle(1.0);
 		fixture.setVelocity(1.0);
 		fixture.setLongitude(1.0);
-		fixture.setLastOdd(1);
-		fixture.setLatitude(1.0);
 		double lon = 1.0;
 
 		fixture.setLongitude(lon);
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at domain.AdsMessage.<init>(AdsMessage.java:30)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
+		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 	}
 
 	/**
@@ -1232,29 +1230,32 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testSetOddMsg_1()
 		throws Exception {
 		Aircraft fixture = new Aircraft(1);
-		fixture.setEvenMsg(new AirbornePositionMessage(""));
 		fixture.setOddMsg(new AirbornePositionMessage(""));
 		fixture.setFlightNo("");
+		fixture.setEvenMsg(new AirbornePositionMessage(""));
+		fixture.setLatitude(1.0);
+		fixture.setLastOdd(1);
 		fixture.setVeloAngle(1.0);
 		fixture.setVelocity(1.0);
 		fixture.setLongitude(1.0);
-		fixture.setLastOdd(1);
-		fixture.setLatitude(1.0);
 		AirbornePositionMessage odd = new AirbornePositionMessage("");
 
 		fixture.setOddMsg(odd);
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at domain.AdsMessage.<init>(AdsMessage.java:30)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
+		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 	}
 
 	/**
@@ -1262,29 +1263,32 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testSetVeloAngle_1()
 		throws Exception {
 		Aircraft fixture = new Aircraft(1);
-		fixture.setEvenMsg(new AirbornePositionMessage(""));
 		fixture.setOddMsg(new AirbornePositionMessage(""));
 		fixture.setFlightNo("");
+		fixture.setEvenMsg(new AirbornePositionMessage(""));
+		fixture.setLatitude(1.0);
+		fixture.setLastOdd(1);
 		fixture.setVeloAngle(1.0);
 		fixture.setVelocity(1.0);
 		fixture.setLongitude(1.0);
-		fixture.setLastOdd(1);
-		fixture.setLatitude(1.0);
 		double angle = 1.0;
 
 		fixture.setVeloAngle(angle);
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at domain.AdsMessage.<init>(AdsMessage.java:30)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
+		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 	}
 
 	/**
@@ -1292,29 +1296,32 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testSetVelocity_1()
 		throws Exception {
 		Aircraft fixture = new Aircraft(1);
-		fixture.setEvenMsg(new AirbornePositionMessage(""));
 		fixture.setOddMsg(new AirbornePositionMessage(""));
 		fixture.setFlightNo("");
+		fixture.setEvenMsg(new AirbornePositionMessage(""));
+		fixture.setLatitude(1.0);
+		fixture.setLastOdd(1);
 		fixture.setVeloAngle(1.0);
 		fixture.setVelocity(1.0);
 		fixture.setLongitude(1.0);
-		fixture.setLastOdd(1);
-		fixture.setLatitude(1.0);
 		double velo = 1.0;
 
 		fixture.setVelocity(velo);
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at domain.AdsMessage.<init>(AdsMessage.java:30)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
+		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 	}
 
 	/**
@@ -1322,28 +1329,31 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testToJedisKey_1()
 		throws Exception {
 		Aircraft fixture = new Aircraft(1);
-		fixture.setEvenMsg(new AirbornePositionMessage(""));
 		fixture.setOddMsg(new AirbornePositionMessage(""));
 		fixture.setFlightNo("");
+		fixture.setEvenMsg(new AirbornePositionMessage(""));
+		fixture.setLatitude(1.0);
+		fixture.setLastOdd(1);
 		fixture.setVeloAngle(1.0);
 		fixture.setVelocity(1.0);
 		fixture.setLongitude(1.0);
-		fixture.setLastOdd(1);
-		fixture.setLatitude(1.0);
 
 		String result = fixture.toJedisKey();
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at domain.AdsMessage.<init>(AdsMessage.java:30)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
+		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 		assertNotNull(result);
 	}
 
@@ -1352,28 +1362,31 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testToJedisString_1()
 		throws Exception {
 		Aircraft fixture = new Aircraft(1);
-		fixture.setEvenMsg((AirbornePositionMessage) null);
 		fixture.setOddMsg(new AirbornePositionMessage(""));
 		fixture.setFlightNo("");
+		fixture.setEvenMsg((AirbornePositionMessage) null);
+		fixture.setLatitude(1.0);
+		fixture.setLastOdd(1);
 		fixture.setVeloAngle(1.0);
 		fixture.setVelocity(1.0);
 		fixture.setLongitude(1.0);
-		fixture.setLastOdd(1);
-		fixture.setLatitude(1.0);
 
 		String result = fixture.toJedisString();
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at domain.AdsMessage.<init>(AdsMessage.java:30)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
+		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 		assertNotNull(result);
 	}
 
@@ -1382,28 +1395,31 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testToJedisString_2()
 		throws Exception {
 		Aircraft fixture = new Aircraft(1);
-		fixture.setEvenMsg(new AirbornePositionMessage(""));
 		fixture.setOddMsg((AirbornePositionMessage) null);
 		fixture.setFlightNo("");
+		fixture.setEvenMsg(new AirbornePositionMessage(""));
+		fixture.setLatitude(1.0);
+		fixture.setLastOdd(1);
 		fixture.setVeloAngle(1.0);
 		fixture.setVelocity(1.0);
 		fixture.setLongitude(1.0);
-		fixture.setLastOdd(1);
-		fixture.setLatitude(1.0);
 
 		String result = fixture.toJedisString();
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at domain.AdsMessage.<init>(AdsMessage.java:30)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
+		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 		assertNotNull(result);
 	}
 
@@ -1412,28 +1428,31 @@ public class AircraftTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testToString_1()
 		throws Exception {
 		Aircraft fixture = new Aircraft(1);
-		fixture.setEvenMsg(new AirbornePositionMessage(""));
 		fixture.setOddMsg(new AirbornePositionMessage(""));
 		fixture.setFlightNo("");
+		fixture.setEvenMsg(new AirbornePositionMessage(""));
+		fixture.setLatitude(1.0);
+		fixture.setLastOdd(1);
 		fixture.setVeloAngle(1.0);
 		fixture.setVelocity(1.0);
 		fixture.setLongitude(1.0);
-		fixture.setLastOdd(1);
-		fixture.setLatitude(1.0);
 
 		String result = fixture.toString();
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at domain.AdsMessage.<init>(AdsMessage.java:30)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
+		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 		assertNotNull(result);
 	}
 
@@ -1443,7 +1462,7 @@ public class AircraftTest {
 	 * @throws Exception
 	 *         if the initialization fails for some reason
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Before
 	public void setUp()
@@ -1457,7 +1476,7 @@ public class AircraftTest {
 	 * @throws Exception
 	 *         if the clean-up fails for some reason
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@After
 	public void tearDown()
@@ -1470,7 +1489,7 @@ public class AircraftTest {
 	 *
 	 * @param args the command line arguments
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	public static void main(String[] args) {
 		new org.junit.runner.JUnitCore().run(AircraftTest.class);

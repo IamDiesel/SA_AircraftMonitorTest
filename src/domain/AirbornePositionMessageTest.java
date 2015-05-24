@@ -6,8 +6,8 @@ import static org.junit.Assert.*;
 /**
  * The class <code>AirbornePositionMessageTest</code> contains tests for the class <code>{@link AirbornePositionMessage}</code>.
  *
- * @generatedBy CodePro at 17.05.15 21:38
- * @author Dogma
+ * @generatedBy CodePro at 24.05.15 21:19
+ * @author Matthias
  * @version $Revision: 1.0 $
  */
 public class AirbornePositionMessageTest {
@@ -16,7 +16,7 @@ public class AirbornePositionMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testAirbornePositionMessage_1()
@@ -27,9 +27,12 @@ public class AirbornePositionMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at domain.AdsMessage.<init>(AdsMessage.java:30)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
+		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 		assertNotNull(result);
 	}
 
@@ -38,7 +41,7 @@ public class AirbornePositionMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testAirbornePositionMessage_2()
@@ -52,10 +55,12 @@ public class AirbornePositionMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.StringIndexOutOfBoundsException: String index out of range: -32
-		//       at java.lang.String.substring(Unknown Source)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:21)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:8)
+		//    java.lang.NullPointerException
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
+		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:10)
 		assertNotNull(result);
 	}
 
@@ -64,7 +69,7 @@ public class AirbornePositionMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetAltitude_1()
@@ -75,9 +80,12 @@ public class AirbornePositionMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at domain.AdsMessage.<init>(AdsMessage.java:30)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
+		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 		assertEquals(0, result);
 	}
 
@@ -86,7 +94,7 @@ public class AirbornePositionMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetAltitude_2()
@@ -97,9 +105,12 @@ public class AirbornePositionMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at domain.AdsMessage.<init>(AdsMessage.java:30)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
+		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 		assertEquals(0, result);
 	}
 
@@ -108,7 +119,7 @@ public class AirbornePositionMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetAltitude_3()
@@ -119,9 +130,12 @@ public class AirbornePositionMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at domain.AdsMessage.<init>(AdsMessage.java:30)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
+		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 		assertEquals(0, result);
 	}
 
@@ -130,7 +144,7 @@ public class AirbornePositionMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetAltitude_4()
@@ -141,9 +155,12 @@ public class AirbornePositionMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at domain.AdsMessage.<init>(AdsMessage.java:30)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
+		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 		assertEquals(0, result);
 	}
 
@@ -152,7 +169,7 @@ public class AirbornePositionMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetAltitude_5()
@@ -163,9 +180,12 @@ public class AirbornePositionMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at domain.AdsMessage.<init>(AdsMessage.java:30)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
+		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 		assertEquals(0, result);
 	}
 
@@ -174,7 +194,7 @@ public class AirbornePositionMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetLatitude_1()
@@ -185,9 +205,12 @@ public class AirbornePositionMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at domain.AdsMessage.<init>(AdsMessage.java:30)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
+		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 		assertEquals(0, result);
 	}
 
@@ -196,7 +219,7 @@ public class AirbornePositionMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetLatitude_2()
@@ -207,9 +230,12 @@ public class AirbornePositionMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at domain.AdsMessage.<init>(AdsMessage.java:30)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
+		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 		assertEquals(0, result);
 	}
 
@@ -218,7 +244,7 @@ public class AirbornePositionMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetLongitude_1()
@@ -229,9 +255,12 @@ public class AirbornePositionMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at domain.AdsMessage.<init>(AdsMessage.java:30)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
+		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 		assertEquals(0, result);
 	}
 
@@ -240,7 +269,7 @@ public class AirbornePositionMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetLongitude_2()
@@ -251,9 +280,12 @@ public class AirbornePositionMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at domain.AdsMessage.<init>(AdsMessage.java:30)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
+		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 		assertEquals(0, result);
 	}
 
@@ -262,7 +294,7 @@ public class AirbornePositionMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetTimeFlag_1()
@@ -273,9 +305,12 @@ public class AirbornePositionMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at domain.AdsMessage.<init>(AdsMessage.java:30)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
+		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 		assertTrue(result);
 	}
 
@@ -284,7 +319,7 @@ public class AirbornePositionMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetTimeFlag_2()
@@ -295,9 +330,12 @@ public class AirbornePositionMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at domain.AdsMessage.<init>(AdsMessage.java:30)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
+		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 		assertTrue(result);
 	}
 
@@ -306,7 +344,7 @@ public class AirbornePositionMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testIsOdd_1()
@@ -317,9 +355,12 @@ public class AirbornePositionMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at domain.AdsMessage.<init>(AdsMessage.java:30)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
+		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 		assertTrue(result);
 	}
 
@@ -328,7 +369,7 @@ public class AirbornePositionMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testIsOdd_2()
@@ -339,9 +380,12 @@ public class AirbornePositionMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at domain.AdsMessage.<init>(AdsMessage.java:30)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
+		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 		assertTrue(result);
 	}
 
@@ -350,7 +394,7 @@ public class AirbornePositionMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testPrint_1()
@@ -361,9 +405,12 @@ public class AirbornePositionMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at domain.AdsMessage.<init>(AdsMessage.java:30)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
+		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 	}
 
 	/**
@@ -371,7 +418,7 @@ public class AirbornePositionMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testToJedisString_1()
@@ -382,9 +429,12 @@ public class AirbornePositionMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at domain.AdsMessage.<init>(AdsMessage.java:30)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
+		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 		assertNotNull(result);
 	}
 
@@ -393,7 +443,7 @@ public class AirbornePositionMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testToString_1()
@@ -404,9 +454,12 @@ public class AirbornePositionMessageTest {
 
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.ArrayIndexOutOfBoundsException: 2
-		//       at domain.AdsMessage.<init>(AdsMessage.java:30)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:12)
+		//    java.lang.NullPointerException
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
+		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
+		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 		assertNotNull(result);
 	}
 
@@ -416,7 +469,7 @@ public class AirbornePositionMessageTest {
 	 * @throws Exception
 	 *         if the initialization fails for some reason
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Before
 	public void setUp()
@@ -430,7 +483,7 @@ public class AirbornePositionMessageTest {
 	 * @throws Exception
 	 *         if the clean-up fails for some reason
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@After
 	public void tearDown()
@@ -443,7 +496,7 @@ public class AirbornePositionMessageTest {
 	 *
 	 * @param args the command line arguments
 	 *
-	 * @generatedBy CodePro at 17.05.15 21:38
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	public static void main(String[] args) {
 		new org.junit.runner.JUnitCore().run(AirbornePositionMessageTest.class);
