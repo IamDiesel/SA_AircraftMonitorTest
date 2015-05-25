@@ -6,7 +6,7 @@ import static org.junit.Assert.*;
 /**
  * The class <code>WebServerTest</code> contains tests for the class <code>{@link WebServer}</code>.
  *
- * @generatedBy CodePro at 24.05.15 21:19
+ * @generatedBy CodePro at 25.05.15 12:07
  * @author Matthias
  * @version $Revision: 1.0 $
  */
@@ -14,7 +14,7 @@ public class WebServerTest {
 	/**
 	 * Run the WebServer() constructor test.
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testWebServer_1()
@@ -30,7 +30,7 @@ public class WebServerTest {
 	 * @throws Exception
 	 *         if the initialization fails for some reason
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Before
 	public void setUp()
@@ -44,7 +44,7 @@ public class WebServerTest {
 	 * @throws Exception
 	 *         if the clean-up fails for some reason
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@After
 	public void tearDown()
@@ -57,7 +57,7 @@ public class WebServerTest {
 	 *
 	 * @param args the command line arguments
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	public static void main(String[] args) {
 		new org.junit.runner.JUnitCore().run(WebServerTest.class);

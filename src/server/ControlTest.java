@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 /**
  * The class <code>ControlTest</code> contains tests for the class <code>{@link Control}</code>.
  *
- * @generatedBy CodePro at 24.05.15 21:19
+ * @generatedBy CodePro at 25.05.15 12:07
  * @author Matthias
  * @version $Revision: 1.0 $
  */
@@ -17,7 +17,7 @@ public class ControlTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testMain_1()
@@ -34,7 +34,7 @@ public class ControlTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testMain_2()
@@ -52,7 +52,7 @@ public class ControlTest {
 	 * @throws Exception
 	 *         if the initialization fails for some reason
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Before
 	public void setUp()
@@ -66,7 +66,7 @@ public class ControlTest {
 	 * @throws Exception
 	 *         if the clean-up fails for some reason
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@After
 	public void tearDown()
@@ -79,7 +79,7 @@ public class ControlTest {
 	 *
 	 * @param args the command line arguments
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	public static void main(String[] args) {
 		new org.junit.runner.JUnitCore().run(ControlTest.class);

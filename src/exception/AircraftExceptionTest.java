@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 /**
  * The class <code>AircraftExceptionTest</code> contains tests for the class <code>{@link AircraftException}</code>.
  *
- * @generatedBy CodePro at 24.05.15 21:19
+ * @generatedBy CodePro at 25.05.15 12:07
  * @author Matthias
  * @version $Revision: 1.0 $
  */
@@ -17,7 +17,7 @@ public class AircraftExceptionTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testAircraftException_1()
@@ -31,9 +31,9 @@ public class AircraftExceptionTest {
 		// add additional test code here
 		assertNotNull(result);
 		assertEquals(null, result.getCause());
-		assertEquals("exception.AircraftException: AircraftException No1: \nAircraft Content: --Begin--\ndomain.Aircraft@24087701, velocity: -1.0, veloAngle: -1.0, lastOdd: 0, aircraftID: 1, latitude: -1.0, longitude: -1.0\n--End Msg Content--", result.toString());
-		assertEquals("AircraftException No1: \nAircraft Content: --Begin--\ndomain.Aircraft@24087701, velocity: -1.0, veloAngle: -1.0, lastOdd: 0, aircraftID: 1, latitude: -1.0, longitude: -1.0\n--End Msg Content--", result.getLocalizedMessage());
-		assertEquals("AircraftException No1: \nAircraft Content: --Begin--\ndomain.Aircraft@24087701, velocity: -1.0, veloAngle: -1.0, lastOdd: 0, aircraftID: 1, latitude: -1.0, longitude: -1.0\n--End Msg Content--", result.getMessage());
+		assertEquals("exception.AircraftException: AircraftException No1: \nAircraft Content: --Begin--\ndomain.Aircraft@4cb725b1, velocity: -1.0, veloAngle: -1.0, lastOdd: 0, aircraftID: 1, latitude: -1.0, longitude: -1.0\n--End Msg Content--", result.toString());
+		assertEquals("AircraftException No1: \nAircraft Content: --Begin--\ndomain.Aircraft@4cb725b1, velocity: -1.0, veloAngle: -1.0, lastOdd: 0, aircraftID: 1, latitude: -1.0, longitude: -1.0\n--End Msg Content--", result.getLocalizedMessage());
+		assertEquals("AircraftException No1: \nAircraft Content: --Begin--\ndomain.Aircraft@4cb725b1, velocity: -1.0, veloAngle: -1.0, lastOdd: 0, aircraftID: 1, latitude: -1.0, longitude: -1.0\n--End Msg Content--", result.getMessage());
 	}
 
 	/**
@@ -41,7 +41,7 @@ public class AircraftExceptionTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetAircraft_1()
@@ -56,10 +56,10 @@ public class AircraftExceptionTest {
 		assertEquals(1, result.getID());
 		assertEquals(null, result.getOdd());
 		assertEquals("1", result.toJedisKey());
-		assertEquals(-1.0, result.getVelocity(), 1.0);
-		assertEquals(-1.0, result.getVeloAngle(), 1.0);
 		assertEquals(null, result.getEven());
 		assertEquals(0, result.getLastOdd());
+		assertEquals(-1.0, result.getVelocity(), 1.0);
+		assertEquals(-1.0, result.getVeloAngle(), 1.0);
 		assertEquals("1,,-1.0,-1.0,-1.0,-1.0,0,,", result.toJedisString());
 	}
 
@@ -69,7 +69,7 @@ public class AircraftExceptionTest {
 	 * @throws Exception
 	 *         if the initialization fails for some reason
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Before
 	public void setUp()
@@ -83,7 +83,7 @@ public class AircraftExceptionTest {
 	 * @throws Exception
 	 *         if the clean-up fails for some reason
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@After
 	public void tearDown()
@@ -96,7 +96,7 @@ public class AircraftExceptionTest {
 	 *
 	 * @param args the command line arguments
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	public static void main(String[] args) {
 		new org.junit.runner.JUnitCore().run(AircraftExceptionTest.class);

@@ -8,7 +8,7 @@ import exception.AdsMessageFactoryException;
 /**
  * The class <code>AdsMessageFactoryTest</code> contains tests for the class <code>{@link AdsMessageFactory}</code>.
  *
- * @generatedBy CodePro at 24.05.15 21:19
+ * @generatedBy CodePro at 25.05.15 12:08
  * @author Matthias
  * @version $Revision: 1.0 $
  */
@@ -18,7 +18,7 @@ public class AdsMessageFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:08
 	 */
 	@Test
 	public void testGetInstance_1()
@@ -35,7 +35,7 @@ public class AdsMessageFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:08
 	 */
 	@Test
 	public void testGetInstance_2()
@@ -52,7 +52,7 @@ public class AdsMessageFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:08
 	 */
 	@Test
 	public void testSentence2Message_1()
@@ -78,7 +78,7 @@ public class AdsMessageFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:08
 	 */
 	@Test
 	public void testSentence2Message_2()
@@ -104,7 +104,7 @@ public class AdsMessageFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:08
 	 */
 	@Test
 	public void testSentence2Message_3()
@@ -130,7 +130,7 @@ public class AdsMessageFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:08
 	 */
 	@Test
 	public void testSentence2Message_4()
@@ -156,7 +156,7 @@ public class AdsMessageFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:08
 	 */
 	@Test
 	public void testSentence2Message_5()
@@ -182,7 +182,7 @@ public class AdsMessageFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:08
 	 */
 	@Test
 	public void testSentence2Message_6()
@@ -208,7 +208,7 @@ public class AdsMessageFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:08
 	 */
 	@Test
 	public void testSentence2Message_7()
@@ -234,7 +234,7 @@ public class AdsMessageFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:08
 	 */
 	@Test
 	public void testSentence2Message_8()
@@ -260,7 +260,7 @@ public class AdsMessageFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:08
 	 */
 	@Test
 	public void testSentence2Message_9()
@@ -286,7 +286,7 @@ public class AdsMessageFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:08
 	 */
 	@Test
 	public void testSentence2Message_10()
@@ -312,7 +312,7 @@ public class AdsMessageFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:08
 	 */
 	@Test
 	public void testSentence2Message_11()
@@ -338,7 +338,7 @@ public class AdsMessageFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:08
 	 */
 	@Test
 	public void testSentence2Message_12()
@@ -364,7 +364,7 @@ public class AdsMessageFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:08
 	 */
 	@Test(expected = exception.AdsMessageFactoryException.class)
 	public void testSentence2Message_13()
@@ -383,7 +383,7 @@ public class AdsMessageFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:08
 	 */
 	@Test(expected = exception.AdsMessageFactoryException.class)
 	public void testSentence2Message_14()
@@ -402,7 +402,7 @@ public class AdsMessageFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:08
 	 */
 	@Test(expected = exception.AdsMessageFactoryException.class)
 	public void testSentence2Message_15()
@@ -421,7 +421,7 @@ public class AdsMessageFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:08
 	 */
 	@Test(expected = exception.AdsMessageFactoryException.class)
 	public void testSentence2Message_16()
@@ -441,7 +441,7 @@ public class AdsMessageFactoryTest {
 	 * @throws Exception
 	 *         if the initialization fails for some reason
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:08
 	 */
 	@Before
 	public void setUp()
@@ -455,7 +455,7 @@ public class AdsMessageFactoryTest {
 	 * @throws Exception
 	 *         if the clean-up fails for some reason
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:08
 	 */
 	@After
 	public void tearDown()
@@ -468,7 +468,7 @@ public class AdsMessageFactoryTest {
 	 *
 	 * @param args the command line arguments
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:08
 	 */
 	public static void main(String[] args) {
 		new org.junit.runner.JUnitCore().run(AdsMessageFactoryTest.class);

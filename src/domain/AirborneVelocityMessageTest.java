@@ -6,7 +6,7 @@ import static org.junit.Assert.*;
 /**
  * The class <code>AirborneVelocityMessageTest</code> contains tests for the class <code>{@link AirborneVelocityMessage}</code>.
  *
- * @generatedBy CodePro at 24.05.15 21:19
+ * @generatedBy CodePro at 25.05.15 12:07
  * @author Matthias
  * @version $Revision: 1.0 $
  */
@@ -16,7 +16,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testAirborneVelocityMessage_1()
@@ -31,9 +31,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -45,7 +48,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetAirspeed_1()
@@ -57,9 +60,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -71,7 +77,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetAirspeed_2()
@@ -83,9 +89,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -97,7 +106,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetAirspeed_3()
@@ -109,9 +118,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -123,7 +135,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetAirspeed_4()
@@ -135,9 +147,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -149,7 +164,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetAirspeed_5()
@@ -161,9 +176,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -175,7 +193,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetDeltaBaroAltoAttitude_1()
@@ -187,9 +205,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -201,7 +222,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetDeltaBaroAltoAttitude_2()
@@ -213,9 +234,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -227,7 +251,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetDeltaBaroAltoAttitude_3()
@@ -239,9 +263,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -253,7 +280,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetDeltaBaroAltoAttitude_4()
@@ -265,9 +292,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -279,7 +309,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetEastWestVelocity_1()
@@ -291,9 +321,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -305,7 +338,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetEastWestVelocity_2()
@@ -317,9 +350,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -331,7 +367,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetEastWestVelocity_3()
@@ -343,9 +379,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -357,7 +396,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetGeoGreaterBaroAttitude_1()
@@ -369,9 +408,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -383,7 +425,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetGeoGreaterBaroAttitude_2()
@@ -395,9 +437,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -409,7 +454,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetGeoGreaterBaroAttitude_3()
@@ -421,9 +466,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -435,7 +483,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetGeoGreaterBaroAttitude_4()
@@ -447,9 +495,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -461,7 +512,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetHeadingDegrees_1()
@@ -473,9 +524,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -487,7 +541,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetHeadingDegrees_2()
@@ -499,9 +553,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -513,7 +570,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetHeadingDegrees_3()
@@ -525,9 +582,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -539,7 +599,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetHeadingDegrees_4()
@@ -551,9 +611,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -565,7 +628,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetHeadingDegrees_5()
@@ -577,9 +640,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -591,7 +657,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetHeadingDegrees_6()
@@ -603,9 +669,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -617,7 +686,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetHeadingStatusAvailable_1()
@@ -629,9 +698,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -643,7 +715,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetHeadingStatusAvailable_2()
@@ -655,9 +727,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -669,7 +744,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetMessageSubType_1()
@@ -681,9 +756,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -695,7 +773,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetMessageSubType_2()
@@ -707,9 +785,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -721,7 +802,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetMovingEast_1()
@@ -733,9 +814,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -747,7 +831,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetMovingEast_2()
@@ -759,9 +843,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -773,7 +860,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetMovingEast_3()
@@ -785,9 +872,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -799,7 +889,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetMovingSouth_1()
@@ -811,9 +901,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -825,7 +918,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetMovingSouth_2()
@@ -837,9 +930,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -851,7 +947,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetMovingSouth_3()
@@ -863,9 +959,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -877,7 +976,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetMovingWest_1()
@@ -889,9 +988,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -903,7 +1005,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetMovingWest_2()
@@ -915,9 +1017,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -929,7 +1034,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetMovingWest_3()
@@ -941,9 +1046,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -955,7 +1063,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetNavigationAccuracy_1()
@@ -967,9 +1075,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -981,7 +1092,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetNavigationAccuracy_2()
@@ -993,9 +1104,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -1007,7 +1121,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetNavigationAccuracy_3()
@@ -1019,9 +1133,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -1033,7 +1150,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetNavigationAccuracy_4()
@@ -1045,9 +1162,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -1059,7 +1179,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetNavigationAccuracy_5()
@@ -1071,9 +1191,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -1085,7 +1208,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetNavigationAccuracy_6()
@@ -1097,9 +1220,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -1111,7 +1237,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetNavigationAccuracy_7()
@@ -1123,9 +1249,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -1137,7 +1266,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetNorthSouthVelocity_1()
@@ -1149,9 +1278,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -1163,7 +1295,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetNorthSouthVelocity_2()
@@ -1175,9 +1307,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -1189,7 +1324,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetNorthSouthVelocity_3()
@@ -1201,9 +1336,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -1215,7 +1353,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetTrueAirspeedType_1()
@@ -1227,9 +1365,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -1241,7 +1382,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetTrueAirspeedType_2()
@@ -1253,9 +1394,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -1267,7 +1411,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetVerticalRate_1()
@@ -1279,9 +1423,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -1293,7 +1440,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetVerticalRate_2()
@@ -1305,9 +1452,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -1319,7 +1469,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetVerticalRate_3()
@@ -1331,9 +1481,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -1345,7 +1498,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetVerticalRateSign_1()
@@ -1357,9 +1510,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -1371,7 +1527,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetVerticalRateSign_2()
@@ -1383,9 +1539,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -1397,7 +1556,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetVerticalRateSource_1()
@@ -1409,9 +1568,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -1423,7 +1585,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetVerticalRateSource_2()
@@ -1435,9 +1597,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -1445,136 +1610,11 @@ public class AirborneVelocityMessageTest {
 	}
 
 	/**
-	 * Run the void print() method test.
-	 *
-	 * @throws Exception
-	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
-	 */
-	@Test
-	public void testPrint_1()
-		throws Exception {
-		AirborneVelocityMessage fixture = new AirborneVelocityMessage("", 1, 1, 1L);
-
-		fixture.print();
-
-		// add additional test code here
-		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
-		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
-	}
-
-	/**
-	 * Run the void print() method test.
-	 *
-	 * @throws Exception
-	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
-	 */
-	@Test
-	public void testPrint_2()
-		throws Exception {
-		AirborneVelocityMessage fixture = new AirborneVelocityMessage("", 1, 1, 1L);
-
-		fixture.print();
-
-		// add additional test code here
-		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
-		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
-	}
-
-	/**
-	 * Run the void print() method test.
-	 *
-	 * @throws Exception
-	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
-	 */
-	@Test
-	public void testPrint_3()
-		throws Exception {
-		AirborneVelocityMessage fixture = new AirborneVelocityMessage("", 1, 1, 1L);
-
-		fixture.print();
-
-		// add additional test code here
-		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
-		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
-	}
-
-	/**
-	 * Run the void print() method test.
-	 *
-	 * @throws Exception
-	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
-	 */
-	@Test
-	public void testPrint_4()
-		throws Exception {
-		AirborneVelocityMessage fixture = new AirborneVelocityMessage("", 1, 1, 1L);
-
-		fixture.print();
-
-		// add additional test code here
-		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
-		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
-	}
-
-	/**
-	 * Run the void print() method test.
-	 *
-	 * @throws Exception
-	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
-	 */
-	@Test
-	public void testPrint_5()
-		throws Exception {
-		AirborneVelocityMessage fixture = new AirborneVelocityMessage("", 1, 1, 1L);
-
-		fixture.print();
-
-		// add additional test code here
-		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
-		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
-		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
-	}
-
-	/**
 	 * Run the String toJedisString() method test.
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testToJedisString_1()
@@ -1586,9 +1626,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -1600,7 +1643,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testToString_1()
@@ -1612,9 +1655,12 @@ public class AirborneVelocityMessageTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at domain.AirborneVelocityMessage.getMessageSubType(AirborneVelocityMessage.java:209)
-		//       at domain.AirborneVelocityMessage.getAirspeed(AirborneVelocityMessage.java:189)
-		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:239)
+		//       at java.util.Calendar.setTime(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.SimpleDateFormat.format(Unknown Source)
+		//       at java.text.DateFormat.format(Unknown Source)
+		//       at domain.AdsMessage.toString(AdsMessage.java:66)
+		//       at domain.AirborneVelocityMessage.toString(AirborneVelocityMessage.java:214)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		//       at domain.AirborneVelocityMessage.<init>(AirborneVelocityMessage.java:14)
@@ -1627,7 +1673,7 @@ public class AirborneVelocityMessageTest {
 	 * @throws Exception
 	 *         if the initialization fails for some reason
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Before
 	public void setUp()
@@ -1641,7 +1687,7 @@ public class AirborneVelocityMessageTest {
 	 * @throws Exception
 	 *         if the clean-up fails for some reason
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@After
 	public void tearDown()
@@ -1654,7 +1700,7 @@ public class AirborneVelocityMessageTest {
 	 *
 	 * @param args the command line arguments
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	public static void main(String[] args) {
 		new org.junit.runner.JUnitCore().run(AirborneVelocityMessageTest.class);
