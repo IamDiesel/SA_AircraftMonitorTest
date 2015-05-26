@@ -6,7 +6,7 @@ import static org.junit.Assert.*;
 /**
  * The class <code>AdsMessageFactoryExceptionTest</code> contains tests for the class <code>{@link AdsMessageFactoryException}</code>.
  *
- * @generatedBy CodePro at 25.05.15 12:07
+ * @generatedBy CodePro at 24.05.15 21:19
  * @author Matthias
  * @version $Revision: 1.0 $
  */
@@ -16,7 +16,7 @@ public class AdsMessageFactoryExceptionTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testAdsMessageFactoryException_1()
@@ -34,12 +34,12 @@ public class AdsMessageFactoryExceptionTest {
 
 		// add additional test code here
 		assertNotNull(result);
-		assertEquals(1L, result.getTimeStamp());
-		assertEquals("", result.getPayload());
 		assertEquals(1, result.getMessageType());
+		assertEquals(1L, result.getTimeStamp());
 		assertEquals("", result.getBinarySentence());
-		assertEquals(1, result.getOriginator());
 		assertEquals("", result.getSentence());
+		assertEquals(1, result.getOriginator());
+		assertEquals("", result.getPayload());
 		assertEquals(null, result.getCause());
 		assertEquals("exception.AdsMessageFactoryException: AdsMessageFactoryException No. 1: --Begin Err Data--\nSentence: \nPayload: \nbinarySentence: \n--End Err Data--", result.toString());
 		assertEquals("AdsMessageFactoryException No. 1: --Begin Err Data--\nSentence: \nPayload: \nbinarySentence: \n--End Err Data--", result.getLocalizedMessage());
@@ -51,7 +51,7 @@ public class AdsMessageFactoryExceptionTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetBinarySentence_1()
@@ -70,7 +70,7 @@ public class AdsMessageFactoryExceptionTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetMessageType_1()
@@ -89,7 +89,7 @@ public class AdsMessageFactoryExceptionTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetOriginator_1()
@@ -108,7 +108,7 @@ public class AdsMessageFactoryExceptionTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetPayload_1()
@@ -127,7 +127,7 @@ public class AdsMessageFactoryExceptionTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetSentence_1()
@@ -146,7 +146,7 @@ public class AdsMessageFactoryExceptionTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetTimeStamp_1()
@@ -166,7 +166,7 @@ public class AdsMessageFactoryExceptionTest {
 	 * @throws Exception
 	 *         if the initialization fails for some reason
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Before
 	public void setUp()
@@ -180,7 +180,7 @@ public class AdsMessageFactoryExceptionTest {
 	 * @throws Exception
 	 *         if the clean-up fails for some reason
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@After
 	public void tearDown()
@@ -193,7 +193,7 @@ public class AdsMessageFactoryExceptionTest {
 	 *
 	 * @param args the command line arguments
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	public static void main(String[] args) {
 		new org.junit.runner.JUnitCore().run(AdsMessageFactoryExceptionTest.class);

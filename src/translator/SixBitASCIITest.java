@@ -6,7 +6,7 @@ import static org.junit.Assert.*;
 /**
  * The class <code>SixBitASCIITest</code> contains tests for the class <code>{@link SixBitASCII}</code>.
  *
- * @generatedBy CodePro at 25.05.15 12:07
+ * @generatedBy CodePro at 24.05.15 21:19
  * @author Matthias
  * @version $Revision: 1.0 $
  */
@@ -16,7 +16,7 @@ public class SixBitASCIITest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testBin2ASCII_1()
@@ -40,7 +40,7 @@ public class SixBitASCIITest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testBin2ASCII_2()
@@ -64,7 +64,7 @@ public class SixBitASCIITest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testBin2ASCII_3()
@@ -82,7 +82,7 @@ public class SixBitASCIITest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testBin2ASCII_4()
@@ -106,7 +106,7 @@ public class SixBitASCIITest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testBin2ASCII_5()
@@ -125,7 +125,7 @@ public class SixBitASCIITest {
 	 * @throws Exception
 	 *         if the initialization fails for some reason
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Before
 	public void setUp()
@@ -139,7 +139,7 @@ public class SixBitASCIITest {
 	 * @throws Exception
 	 *         if the clean-up fails for some reason
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@After
 	public void tearDown()
@@ -152,7 +152,7 @@ public class SixBitASCIITest {
 	 *
 	 * @param args the command line arguments
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	public static void main(String[] args) {
 		new org.junit.runner.JUnitCore().run(SixBitASCIITest.class);

@@ -48,7 +48,7 @@ public class JedisAircraftServerTest {
 	/**
 	 * Run the JedisAircraftServer() constructor test.
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testJedisAircraftServer_1()
@@ -63,7 +63,7 @@ public class JedisAircraftServerTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testOnMessage_2()
@@ -85,7 +85,7 @@ public class JedisAircraftServerTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testOnMessage_3()
@@ -107,7 +107,7 @@ public class JedisAircraftServerTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testOnMessage_4()
@@ -129,7 +129,7 @@ public class JedisAircraftServerTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testOnMessage_5()
@@ -151,7 +151,7 @@ public class JedisAircraftServerTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testOnMessage_6()
@@ -173,7 +173,7 @@ public class JedisAircraftServerTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testOnMessage_7()
@@ -195,7 +195,7 @@ public class JedisAircraftServerTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testOnMessage_8()
@@ -217,7 +217,7 @@ public class JedisAircraftServerTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testOnMessage_9()
@@ -239,7 +239,7 @@ public class JedisAircraftServerTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testOnMessage_10()
@@ -261,7 +261,7 @@ public class JedisAircraftServerTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testOnMessage_11()
@@ -283,7 +283,7 @@ public class JedisAircraftServerTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testOnMessage_12()
@@ -305,7 +305,7 @@ public class JedisAircraftServerTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testOnMessage_13()
@@ -327,7 +327,7 @@ public class JedisAircraftServerTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testOnMessage_14()
@@ -349,7 +349,7 @@ public class JedisAircraftServerTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testOnMessage_15()
@@ -371,7 +371,7 @@ public class JedisAircraftServerTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testOnMessage_16()
@@ -393,7 +393,7 @@ public class JedisAircraftServerTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testOnMessage_17()
@@ -415,7 +415,7 @@ public class JedisAircraftServerTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testOnPMessage_1()
@@ -435,7 +435,7 @@ public class JedisAircraftServerTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testOnPSubscribe_1()
@@ -454,7 +454,7 @@ public class JedisAircraftServerTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testOnPUnsubscribe_1()
@@ -473,7 +473,7 @@ public class JedisAircraftServerTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testOnSubscribe_1()
@@ -492,7 +492,7 @@ public class JedisAircraftServerTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testOnUnsubscribe_1()
@@ -512,7 +512,7 @@ public class JedisAircraftServerTest {
 	 * @throws Exception
 	 *         if the initialization fails for some reason
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Before
 	public void setUp()
@@ -526,7 +526,7 @@ public class JedisAircraftServerTest {
 	 * @throws Exception
 	 *         if the clean-up fails for some reason
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@After
 	public void tearDown()
@@ -539,7 +539,7 @@ public class JedisAircraftServerTest {
 	 *
 	 * @param args the command line arguments
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	public static void main(String[] args) {
 		new org.junit.runner.JUnitCore().run(JedisAircraftServerTest.class);

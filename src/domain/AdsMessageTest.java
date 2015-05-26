@@ -28,7 +28,7 @@ public class AdsMessageTest {
 		AdsMessage result = new AdsMessage(jedisString);
 
 		// add additional test code here
-		assertNull(result);
+		assertNotNull(result);
 	}
 
 	/**
@@ -41,12 +41,12 @@ public class AdsMessageTest {
 	@Test(expected = exception.AdsMessageException.class)
 	public void testAdsMessage_2()
 		throws Exception {
-		String jedisString = "19;4901205;10011001010000001001101100110101111000000101000000011010010011101000001011100110";
+		String jedisString = "";
 
 		AdsMessage result = new AdsMessage(jedisString);
 
 		// add additional test code here
-		assertNull(result);
+		assertNotNull(result);
 	}
 
 	/**
@@ -59,12 +59,12 @@ public class AdsMessageTest {
 	@Test(expected = exception.AdsMessageException.class)
 	public void testAdsMessage_3()
 		throws Exception {
-		String jedisString = "19;4901205;1431508173375";
+		String jedisString = "a";
 
 		AdsMessage result = new AdsMessage(jedisString);
 
 		// add additional test code here
-		assertNull(result);
+		assertNotNull(result);
 	}
 
 	/**
@@ -77,12 +77,12 @@ public class AdsMessageTest {
 	@Test(expected = exception.AdsMessageException.class)
 	public void testAdsMessage_4()
 		throws Exception {
-		String jedisString = "19;10011001010000001001101100110101111000000101000000011010010011101000001011100110;1431508173375";
+		String jedisString = "a";
 
 		AdsMessage result = new AdsMessage(jedisString);
 
 		// add additional test code here
-		assertNull(result);
+		assertNotNull(result);
 	}
 
 	/**
@@ -95,12 +95,12 @@ public class AdsMessageTest {
 	@Test(expected = exception.AdsMessageException.class)
 	public void testAdsMessage_5()
 		throws Exception {
-		String jedisString = "4901205;10011001010000001001101100110101111000000101000000011010010011101000001011100110;1431508173375";
+		String jedisString = "a";
 
 		AdsMessage result = new AdsMessage(jedisString);
 
 		// add additional test code here
-		assertNull(result);
+		assertNotNull(result);
 	}
 
 	/**
@@ -113,12 +113,12 @@ public class AdsMessageTest {
 	@Test(expected = exception.AdsMessageException.class)
 	public void testAdsMessage_6()
 		throws Exception {
-		String jedisString = "19;4901205;1431508173375;10011001010000001001101100110101111000000101000000011010010011101000001011100110";
+		String jedisString = "a";
 
 		AdsMessage result = new AdsMessage(jedisString);
 
 		// add additional test code here
-		assertNull(result);
+		assertNotNull(result);
 	}
 
 	/**
@@ -131,12 +131,12 @@ public class AdsMessageTest {
 	@Test(expected = exception.AdsMessageException.class)
 	public void testAdsMessage_7()
 		throws Exception {
-		String jedisString = "4901205;19;10011001010000001001101100110101111000000101000000011010010011101000001011100110;1431508173375";
+		String jedisString = "a";
 
 		AdsMessage result = new AdsMessage(jedisString);
 
 		// add additional test code here
-		assertNull(result);
+		assertNotNull(result);
 	}
 
 	/**
@@ -149,18 +149,18 @@ public class AdsMessageTest {
 	@Test
 	public void testAdsMessage_8()
 		throws Exception {
-		String binarySentence = "1000110101001010110010010101010110011001010000001001101100110101111000000101000000011010010011101000001011100110";
-		int messageTypeD = 19;
-		int originatorD = 4901205;
-		long time = 1431508173375L;
+		String binarySentence = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+		int messageTypeD = 1;
+		int originatorD = 1;
+		long time = 1L;
 
 		AdsMessage result = new AdsMessage(binarySentence, messageTypeD, originatorD, time);
 
 		// add additional test code here
 		assertNotNull(result);
-		assertEquals(19, result.getMessageTypeD());
-		assertEquals(4901205, result.getOriginatorD());
-		assertEquals("19;4901205;10011001010000001001101100110101111000000101000000011010010011101000001011100110;1431508173375", result.toJedisString());
+		assertEquals(1, result.getMessageTypeD());
+		assertEquals(1, result.getOriginatorD());
+		assertEquals("1;1", result.toJedisString());
 	}
 
 	/**
@@ -173,23 +173,15 @@ public class AdsMessageTest {
 	@Test(expected = exception.AdsMessageException.class)
 	public void testAdsMessage_9()
 		throws Exception {
-		String binarySentence = "00110101001010110010010101010110011001010000001001101100110101111000000101000000011010010011101000001011100110";
-		int messageTypeD = 19;
-		int originatorD = 4901205;
-		long time = 1431508173375L;
-		AdsMessage result = null;
-		try
-		{
-			result = new AdsMessage(binarySentence, messageTypeD, originatorD, time);
-		}
-		catch(AdsMessageException e)
-		{
-			System.out.print(e.getMessage());
-			String test = "AdsMessageException No0: Binary Sentence too short (binarySentence size =110).";
-			assertEquals(test,e.getMessage());
-		}
+		String binarySentence = "";
+		int messageTypeD = 1;
+		int originatorD = 1;
+		long time = 1L;
+
+		AdsMessage result = new AdsMessage(binarySentence, messageTypeD, originatorD, time);
+
 		// add additional test code here
-		assertNull(result);
+		assertNotNull(result);
 	}
 
 	/**
@@ -202,11 +194,7 @@ public class AdsMessageTest {
 	@Test
 	public void testGetMessageTypeD_1()
 		throws Exception {
-		String binarySentence = "1000110101001010110010010101010110011001010000001001101100110101111000000101000000011010010011101000001011100110";
-		int messageTypeD = 19;
-		int originatorD = 4901205;
-		long time = 1431508173375L;
-		AdsMessage fixture = new AdsMessage(binarySentence, messageTypeD, originatorD, time);
+		AdsMessage fixture = new AdsMessage("", 1, 1, 1L);
 
 		int result = fixture.getMessageTypeD();
 
@@ -217,7 +205,7 @@ public class AdsMessageTest {
 		//       domain.AdsMessage@1bd4dd3b, messageTypeD: 0, OriginatorD: 0, TimeStamp: null, binarySentence: null
 		//       --End Msg Content--
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
-		assertEquals(19, result);
+		assertEquals(0, result);
 	}
 
 	/**
@@ -230,11 +218,7 @@ public class AdsMessageTest {
 	@Test
 	public void testGetOriginatorD_1()
 		throws Exception {
-		String binarySentence = "1000110101001010110010010101010110011001010000001001101100110101111000000101000000011010010011101000001011100110";
-		int messageTypeD = 19;
-		int originatorD = 4901205;
-		long time = 1431508173375L;
-		AdsMessage fixture = new AdsMessage(binarySentence, messageTypeD, originatorD, time);
+		AdsMessage fixture = new AdsMessage("", 1, 1, 1L);
 
 		int result = fixture.getOriginatorD();
 
@@ -245,7 +229,7 @@ public class AdsMessageTest {
 		//       domain.AdsMessage@ca85335, messageTypeD: 0, OriginatorD: 0, TimeStamp: null, binarySentence: null
 		//       --End Msg Content--
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
-		assertEquals(4901205, result);
+		assertEquals(0, result);
 	}
 
 	/**
@@ -258,11 +242,7 @@ public class AdsMessageTest {
 	@Test
 	public void testGetTimeStamp_1()
 		throws Exception {
-		String binarySentence = "1000110101001010110010010101010110011001010000001001101100110101111000000101000000011010010011101000001011100110";
-		int messageTypeD = 19;
-		int originatorD = 4901205;
-		long time = 1431508173375L;
-		AdsMessage fixture = new AdsMessage(binarySentence, messageTypeD, originatorD, time);
+		AdsMessage fixture = new AdsMessage("", 1, 1, 1L);
 
 		Timestamp result = fixture.getTimeStamp();
 
@@ -274,8 +254,29 @@ public class AdsMessageTest {
 		//       --End Msg Content--
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		assertNotNull(result);
-		assertEquals("2015-05-13 11:09:33.375",result.toString());
-		assertEquals(1431508173375L,result.getTime());
+	}
+
+	/**
+	 * Run the void print() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 24.05.15 21:19
+	 */
+	@Test
+	public void testPrint_1()
+		throws Exception {
+		AdsMessage fixture = new AdsMessage("", 1, 1, 1L);
+
+		fixture.print();
+
+		// add additional test code here
+		// An unexpected exception was thrown in user code while executing this test:
+		//    exception.AdsMessageException: AdsMessageException No0: Binary Sentece too short (binarySentence size =0.
+		//       Message Content: --Begin--
+		//       domain.AdsMessage@6f758939, messageTypeD: 0, OriginatorD: 0, TimeStamp: null, binarySentence: null
+		//       --End Msg Content--
+		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 	}
 
 	/**
@@ -288,12 +289,7 @@ public class AdsMessageTest {
 	@Test
 	public void testToJedisString_1()
 		throws Exception {
-		String binarySentence = "1000110101001010110010010101010110011001010000001001101100110101111000000101000000011010010011101000001011100110";
-		int messageTypeD = 19;
-		int originatorD = 4901205;
-		long time = 1431508173375L;
-		AdsMessage fixture = new AdsMessage(binarySentence, messageTypeD, originatorD, time);
-
+		AdsMessage fixture = new AdsMessage("", 1, 1, 1L);
 
 		String result = fixture.toJedisString();
 
@@ -304,7 +300,7 @@ public class AdsMessageTest {
 		//       domain.AdsMessage@2ac7dc47, messageTypeD: 0, OriginatorD: 0, TimeStamp: null, binarySentence: null
 		//       --End Msg Content--
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
-		assertEquals("19;4901205;10011001010000001001101100110101111000000101000000011010010011101000001011100110;1431508173375",result);
+		assertNotNull(result);
 	}
 
 	/**
@@ -317,12 +313,7 @@ public class AdsMessageTest {
 	@Test
 	public void testToString_1()
 		throws Exception {
-		String binarySentence = "1000110101001010110010010101010110011001010000001001101100110101111000000101000000011010010011101000001011100110";
-		int messageTypeD = 19;
-		int originatorD = 4901205;
-		long time = 1431508173375L;
-		AdsMessage fixture = new AdsMessage(binarySentence, messageTypeD, originatorD, time);
-
+		AdsMessage fixture = new AdsMessage("", 1, 1, 1L);
 
 		String result = fixture.toString();
 
@@ -334,8 +325,6 @@ public class AdsMessageTest {
 		//       --End Msg Content--
 		//       at domain.AdsMessage.<init>(AdsMessage.java:23)
 		assertNotNull(result);
-		String test = "messageTypeD: 19, originatorD: 4901205, time: Mittwoch, 13.05.2015, 11:09:33.375, binarySentence: 10011001010000001001101100110101111000000101000000011010010011101000001011100110";
-		assertEquals(test,result);
 	}
 
 	/**

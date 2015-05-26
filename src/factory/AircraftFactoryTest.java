@@ -8,7 +8,7 @@ import exception.AircraftFactoryException;
 /**
  * The class <code>AircraftFactoryTest</code> contains tests for the class <code>{@link AircraftFactory}</code>.
  *
- * @generatedBy CodePro at 25.05.15 12:07
+ * @generatedBy CodePro at 24.05.15 21:19
  * @author Matthias
  * @version $Revision: 1.0 $
  */
@@ -18,7 +18,7 @@ public class AircraftFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetInstance_1()
@@ -35,7 +35,7 @@ public class AircraftFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testGetInstance_2()
@@ -52,7 +52,7 @@ public class AircraftFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test(expected = exception.AircraftFactoryException.class)
 	public void testMessage2Aircraft_1()
@@ -71,7 +71,7 @@ public class AircraftFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test(expected = exception.AircraftFactoryException.class)
 	public void testMessage2Aircraft_2()
@@ -90,7 +90,7 @@ public class AircraftFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test(expected = exception.AircraftFactoryException.class)
 	public void testMessage2Aircraft_3()
@@ -109,7 +109,7 @@ public class AircraftFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test(expected = exception.AircraftFactoryException.class)
 	public void testUpdateIdentification_1()
@@ -128,7 +128,7 @@ public class AircraftFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test(expected = exception.AircraftFactoryException.class)
 	public void testUpdateIdentification_2()
@@ -147,7 +147,7 @@ public class AircraftFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testUpdatePosition_1()
@@ -161,14 +161,10 @@ public class AircraftFactoryTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at java.util.Calendar.setTime(Unknown Source)
-		//       at java.text.SimpleDateFormat.format(Unknown Source)
-		//       at java.text.SimpleDateFormat.format(Unknown Source)
-		//       at java.text.DateFormat.format(Unknown Source)
-		//       at domain.AdsMessage.toString(AdsMessage.java:66)
-		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:53)
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:33)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
 		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 		//       at factory.AircraftFactory.updatePosition(AircraftFactory.java:47)
 	}
@@ -178,7 +174,7 @@ public class AircraftFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testUpdatePosition_2()
@@ -192,14 +188,10 @@ public class AircraftFactoryTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at java.util.Calendar.setTime(Unknown Source)
-		//       at java.text.SimpleDateFormat.format(Unknown Source)
-		//       at java.text.SimpleDateFormat.format(Unknown Source)
-		//       at java.text.DateFormat.format(Unknown Source)
-		//       at domain.AdsMessage.toString(AdsMessage.java:66)
-		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:53)
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:33)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
 		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 		//       at factory.AircraftFactory.updatePosition(AircraftFactory.java:47)
 	}
@@ -209,7 +201,7 @@ public class AircraftFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test
 	public void testUpdatePosition_3()
@@ -223,14 +215,10 @@ public class AircraftFactoryTest {
 		// add additional test code here
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
-		//       at java.util.Calendar.setTime(Unknown Source)
-		//       at java.text.SimpleDateFormat.format(Unknown Source)
-		//       at java.text.SimpleDateFormat.format(Unknown Source)
-		//       at java.text.DateFormat.format(Unknown Source)
-		//       at domain.AdsMessage.toString(AdsMessage.java:66)
-		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:53)
+		//       at domain.AirbornePositionMessage.getLatitude(AirbornePositionMessage.java:44)
+		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:62)
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:33)
+		//       at domain.AdsMessage.<init>(AdsMessage.java:32)
 		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 		//       at factory.AircraftFactory.updatePosition(AircraftFactory.java:47)
 	}
@@ -240,7 +228,7 @@ public class AircraftFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test(expected = exception.AircraftFactoryException.class)
 	public void testUpdateVelocity_1()
@@ -259,7 +247,7 @@ public class AircraftFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test(expected = exception.AircraftFactoryException.class)
 	public void testUpdateVelocity_2()
@@ -278,7 +266,7 @@ public class AircraftFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test(expected = exception.AircraftFactoryException.class)
 	public void testUpdateVelocity_3()
@@ -297,7 +285,7 @@ public class AircraftFactoryTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Test(expected = exception.AircraftFactoryException.class)
 	public void testUpdateVelocity_4()
@@ -317,7 +305,7 @@ public class AircraftFactoryTest {
 	 * @throws Exception
 	 *         if the initialization fails for some reason
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@Before
 	public void setUp()
@@ -331,7 +319,7 @@ public class AircraftFactoryTest {
 	 * @throws Exception
 	 *         if the clean-up fails for some reason
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	@After
 	public void tearDown()
@@ -344,7 +332,7 @@ public class AircraftFactoryTest {
 	 *
 	 * @param args the command line arguments
 	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
+	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
 	public static void main(String[] args) {
 		new org.junit.runner.JUnitCore().run(AircraftFactoryTest.class);
