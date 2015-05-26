@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 /**
  * The class <code>Http2RedisExceptionTest</code> contains tests for the class <code>{@link Http2RedisException}</code>.
  *
- * @generatedBy CodePro at 24.05.15 21:19
+ * @generatedBy CodePro at 25.05.15 12:07
  * @author Matthias
  * @version $Revision: 1.0 $
  */
@@ -17,7 +17,7 @@ public class Http2RedisExceptionTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testHttp2RedisException_1()
@@ -43,7 +43,7 @@ public class Http2RedisExceptionTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testHttp2RedisException_2()
@@ -68,7 +68,7 @@ public class Http2RedisExceptionTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetBuffer_1()
@@ -90,7 +90,7 @@ public class Http2RedisExceptionTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetMessageString_1()
@@ -112,7 +112,7 @@ public class Http2RedisExceptionTest {
 	 *
 	 * @throws Exception
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Test
 	public void testGetURLConnection_1()
@@ -135,7 +135,7 @@ public class Http2RedisExceptionTest {
 	 * @throws Exception
 	 *         if the initialization fails for some reason
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@Before
 	public void setUp()
@@ -149,7 +149,7 @@ public class Http2RedisExceptionTest {
 	 * @throws Exception
 	 *         if the clean-up fails for some reason
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	@After
 	public void tearDown()
@@ -162,7 +162,7 @@ public class Http2RedisExceptionTest {
 	 *
 	 * @param args the command line arguments
 	 *
-	 * @generatedBy CodePro at 24.05.15 21:19
+	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
 	public static void main(String[] args) {
 		new org.junit.runner.JUnitCore().run(Http2RedisExceptionTest.class);
