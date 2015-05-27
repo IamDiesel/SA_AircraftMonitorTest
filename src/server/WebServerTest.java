@@ -1,7 +1,18 @@
 package server;
 
-import org.junit.*;
-import static org.junit.Assert.*;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.InetSocketAddress;
+import java.net.URL;
+import java.net.URLConnection;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+import redis.clients.jedis.Jedis;
+
+import com.sun.net.httpserver.HttpServer;
 
 /**
  * The class <code>WebServerTest</code> contains tests for the class <code>{@link WebServer}</code>.
@@ -19,8 +30,35 @@ public class WebServerTest {
 	@Test
 	public void testWebServer_1()
 		throws Exception {
-		WebServer result = new WebServer();
-		assertNotNull(result);
+		HttpServer server = HttpServer.create(new InetSocketAddress(3333), 0); 
+	    server.createContext( "/map.basic", new WebServer.MapBasic());
+	    server.createContext( "/active.kml", new WebServer.ActiveKML());
+	    server.setExecutor(null); // create a default executor
+	    server.start();
+	    
+		Thread redisDataThread = new Thread(new Runnable(){
+			@Override
+			public void run() {
+				Jedis client = new Jedis("localhost");
+				client.set("3958349", "3958349,DLH6EN,465.3815638806505,133.7811247648687,49.28489685058594,9.735788198617788 ,0,11;3958349;01011000011100111101000011011011010010100001110000000011000100001001110011111111;1431505863126,11;3958349;01011000011100111100010001001111010110100000111000001001000111000100100101000000;1431505862026");
+				}});
+	    
+		redisDataThread.start();
+		/*URL url = new URL("localhost:5000/active.kml");
+		URLConnection con = url.openConnection();
+		BufferedReader buff = new BufferedReader(new InputStreamReader(con.getInputStream()));
+		String inputLine;
+	    while ((inputLine = buff.readLine()) != null) 
+            System.err.println(inputLine);
+        buff.close();*/
+        
+      
+		
+		
+		
+		
+		
+		//assertNotNull(result);
 		// add additional test code here
 	}
 

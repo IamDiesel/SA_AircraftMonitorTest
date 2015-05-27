@@ -1,6 +1,11 @@
 package server;
 
 import org.junit.*;
+
+import redis.clients.jedis.Jedis;
+import redis.clients.jedis.JedisPubSub;
+import domain.AirborneVelocityMessage;
+import factory.AdsMessageFactory;
 import static org.junit.Assert.*;
 
 /**
@@ -34,240 +39,43 @@ public class A_Http2RedisTest {
 	@Test
 	public void testRun_1()
 		throws Exception {
-		A_Http2Redis fixture = new A_Http2Redis();
-
-		fixture.run();
-
-		// add additional test code here
-		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.SecurityException: Cannot write to files while generating test cases
-		//       at com.instantiations.assist.eclipse.junit.CodeProJUnitSecurityManager.checkWrite(CodeProJUnitSecurityManager.java:70)
-		//       at java.io.FileOutputStream.<init>(Unknown Source)
-		//       at java.net.SocketOutputStream.<init>(Unknown Source)
-		//       at java.net.AbstractPlainSocketImpl.getOutputStream(Unknown Source)
-		//       at java.net.PlainSocketImpl.getOutputStream(Unknown Source)
-		//       at java.net.Socket$3.run(Unknown Source)
-		//       at java.net.Socket$3.run(Unknown Source)
-		//       at java.security.AccessController.doPrivileged(Native Method)
-		//       at java.net.Socket.getOutputStream(Unknown Source)
-		//       at sun.net.www.http.HttpClient.openServer(Unknown Source)
-		//       at sun.net.www.http.HttpClient.openServer(Unknown Source)
-		//       at sun.net.www.http.HttpClient.<init>(Unknown Source)
-		//       at sun.net.www.http.HttpClient.New(Unknown Source)
-		//       at sun.net.www.http.HttpClient.New(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection$6.run(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection$6.run(Unknown Source)
-		//       at java.security.AccessController.doPrivileged(Native Method)
-		//       at java.security.AccessController.doPrivileged(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection.access$200(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection$9.run(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection$9.run(Unknown Source)
-		//       at java.security.AccessController.doPrivileged(Native Method)
-		//       at java.security.AccessController.doPrivileged(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-		//       at server.A_Http2Redis.run(A_Http2Redis.java:49)
-	}
-
-	/**
-	 * Run the void run() method test.
-	 *
-	 * @throws Exception
-	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
-	 */
-	@Test
-	public void testRun_2()
-		throws Exception {
-		A_Http2Redis fixture = new A_Http2Redis();
-
-		fixture.run();
-
-		// add additional test code here
-		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.SecurityException: Cannot write to files while generating test cases
-		//       at com.instantiations.assist.eclipse.junit.CodeProJUnitSecurityManager.checkWrite(CodeProJUnitSecurityManager.java:70)
-		//       at java.io.FileOutputStream.<init>(Unknown Source)
-		//       at java.net.SocketOutputStream.<init>(Unknown Source)
-		//       at java.net.AbstractPlainSocketImpl.getOutputStream(Unknown Source)
-		//       at java.net.PlainSocketImpl.getOutputStream(Unknown Source)
-		//       at java.net.Socket$3.run(Unknown Source)
-		//       at java.net.Socket$3.run(Unknown Source)
-		//       at java.security.AccessController.doPrivileged(Native Method)
-		//       at java.net.Socket.getOutputStream(Unknown Source)
-		//       at sun.net.www.http.HttpClient.openServer(Unknown Source)
-		//       at sun.net.www.http.HttpClient.openServer(Unknown Source)
-		//       at sun.net.www.http.HttpClient.<init>(Unknown Source)
-		//       at sun.net.www.http.HttpClient.New(Unknown Source)
-		//       at sun.net.www.http.HttpClient.New(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection$6.run(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection$6.run(Unknown Source)
-		//       at java.security.AccessController.doPrivileged(Native Method)
-		//       at java.security.AccessController.doPrivileged(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection.access$200(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection$9.run(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection$9.run(Unknown Source)
-		//       at java.security.AccessController.doPrivileged(Native Method)
-		//       at java.security.AccessController.doPrivileged(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-		//       at server.A_Http2Redis.run(A_Http2Redis.java:49)
-	}
-
-	/**
-	 * Run the void run() method test.
-	 *
-	 * @throws Exception
-	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
-	 */
-	@Test
-	public void testRun_3()
-		throws Exception {
-		A_Http2Redis fixture = new A_Http2Redis();
-
-		fixture.run();
-
-		// add additional test code here
-		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.SecurityException: Cannot write to files while generating test cases
-		//       at com.instantiations.assist.eclipse.junit.CodeProJUnitSecurityManager.checkWrite(CodeProJUnitSecurityManager.java:70)
-		//       at java.io.FileOutputStream.<init>(Unknown Source)
-		//       at java.net.SocketOutputStream.<init>(Unknown Source)
-		//       at java.net.AbstractPlainSocketImpl.getOutputStream(Unknown Source)
-		//       at java.net.PlainSocketImpl.getOutputStream(Unknown Source)
-		//       at java.net.Socket$3.run(Unknown Source)
-		//       at java.net.Socket$3.run(Unknown Source)
-		//       at java.security.AccessController.doPrivileged(Native Method)
-		//       at java.net.Socket.getOutputStream(Unknown Source)
-		//       at sun.net.www.http.HttpClient.openServer(Unknown Source)
-		//       at sun.net.www.http.HttpClient.openServer(Unknown Source)
-		//       at sun.net.www.http.HttpClient.<init>(Unknown Source)
-		//       at sun.net.www.http.HttpClient.New(Unknown Source)
-		//       at sun.net.www.http.HttpClient.New(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection$6.run(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection$6.run(Unknown Source)
-		//       at java.security.AccessController.doPrivileged(Native Method)
-		//       at java.security.AccessController.doPrivileged(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection.access$200(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection$9.run(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection$9.run(Unknown Source)
-		//       at java.security.AccessController.doPrivileged(Native Method)
-		//       at java.security.AccessController.doPrivileged(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-		//       at server.A_Http2Redis.run(A_Http2Redis.java:49)
-	}
-
-	/**
-	 * Run the void run() method test.
-	 *
-	 * @throws Exception
-	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
-	 */
-	@Test
-	public void testRun_4()
-		throws Exception {
-		A_Http2Redis fixture = new A_Http2Redis();
-
-		fixture.run();
-
-		// add additional test code here
-		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.SecurityException: Cannot write to files while generating test cases
-		//       at com.instantiations.assist.eclipse.junit.CodeProJUnitSecurityManager.checkWrite(CodeProJUnitSecurityManager.java:70)
-		//       at java.io.FileOutputStream.<init>(Unknown Source)
-		//       at java.net.SocketOutputStream.<init>(Unknown Source)
-		//       at java.net.AbstractPlainSocketImpl.getOutputStream(Unknown Source)
-		//       at java.net.PlainSocketImpl.getOutputStream(Unknown Source)
-		//       at java.net.Socket$3.run(Unknown Source)
-		//       at java.net.Socket$3.run(Unknown Source)
-		//       at java.security.AccessController.doPrivileged(Native Method)
-		//       at java.net.Socket.getOutputStream(Unknown Source)
-		//       at sun.net.www.http.HttpClient.openServer(Unknown Source)
-		//       at sun.net.www.http.HttpClient.openServer(Unknown Source)
-		//       at sun.net.www.http.HttpClient.<init>(Unknown Source)
-		//       at sun.net.www.http.HttpClient.New(Unknown Source)
-		//       at sun.net.www.http.HttpClient.New(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection$6.run(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection$6.run(Unknown Source)
-		//       at java.security.AccessController.doPrivileged(Native Method)
-		//       at java.security.AccessController.doPrivileged(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection.access$200(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection$9.run(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection$9.run(Unknown Source)
-		//       at java.security.AccessController.doPrivileged(Native Method)
-		//       at java.security.AccessController.doPrivileged(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-		//       at server.A_Http2Redis.run(A_Http2Redis.java:49)
-	}
-
-	/**
-	 * Run the void run() method test.
-	 *
-	 * @throws Exception
-	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
-	 */
-	@Test
-	public void testRun_5()
-		throws Exception {
-		A_Http2Redis fixture = new A_Http2Redis();
-
-		fixture.run();
-
-		// add additional test code here
-		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.SecurityException: Cannot write to files while generating test cases
-		//       at com.instantiations.assist.eclipse.junit.CodeProJUnitSecurityManager.checkWrite(CodeProJUnitSecurityManager.java:70)
-		//       at java.io.FileOutputStream.<init>(Unknown Source)
-		//       at java.net.SocketOutputStream.<init>(Unknown Source)
-		//       at java.net.AbstractPlainSocketImpl.getOutputStream(Unknown Source)
-		//       at java.net.PlainSocketImpl.getOutputStream(Unknown Source)
-		//       at java.net.Socket$3.run(Unknown Source)
-		//       at java.net.Socket$3.run(Unknown Source)
-		//       at java.security.AccessController.doPrivileged(Native Method)
-		//       at java.net.Socket.getOutputStream(Unknown Source)
-		//       at sun.net.www.http.HttpClient.openServer(Unknown Source)
-		//       at sun.net.www.http.HttpClient.openServer(Unknown Source)
-		//       at sun.net.www.http.HttpClient.<init>(Unknown Source)
-		//       at sun.net.www.http.HttpClient.New(Unknown Source)
-		//       at sun.net.www.http.HttpClient.New(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection$6.run(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection$6.run(Unknown Source)
-		//       at java.security.AccessController.doPrivileged(Native Method)
-		//       at java.security.AccessController.doPrivileged(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection.access$200(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection$9.run(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection$9.run(Unknown Source)
-		//       at java.security.AccessController.doPrivileged(Native Method)
-		//       at java.security.AccessController.doPrivileged(Unknown Source)
-		//       at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
-		//       at server.A_Http2Redis.run(A_Http2Redis.java:49)
-	}
+		
+		Jedis jedClient = new Jedis("localhost");
+		jedClient.flushAll();
+		
+	    A_Http2Redis fixture = new A_Http2Redis();
+		Thread httpConverterServer = new Thread (fixture);
+		// make sure redis-server is running
+		
+			JedisPubSub jedisSubscription = new JedisPubSub()
+			{
+					@Override
+					public void onMessage(String channel, String message) {
+						unsubscribe("ads.msg.identification", "ads.msg.velocity", "ads.msg.position");
+						assertNotNull(message);
+						
+					}
+		
+					@Override
+					public void onPMessage(String arg0, String arg1, String arg2) {}
+		
+					@Override
+					public void onPSubscribe(String arg0, int arg1) {}
+		
+					@Override
+					public void onPUnsubscribe(String arg0, int arg1) {}
+		
+					@Override
+					public void onSubscribe(String arg0, int arg1) {}
+		
+					@Override
+					public void onUnsubscribe(String arg0, int arg1) {}
+			};
+		httpConverterServer.start();
+		jedClient.subscribe(jedisSubscription, "ads.msg.identification", "ads.msg.velocity", "ads.msg.position");
+		httpConverterServer.join(10000);
+		}
+	
 
 	/**
 	 * Perform pre-test initialization.

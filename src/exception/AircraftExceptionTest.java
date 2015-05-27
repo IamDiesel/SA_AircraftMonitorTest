@@ -31,9 +31,9 @@ public class AircraftExceptionTest {
 		// add additional test code here
 		assertNotNull(result);
 		assertEquals(null, result.getCause());
-		assertEquals("exception.AircraftException: AircraftException No1: \nAircraft Content: --Begin--\ndomain.Aircraft@4cb725b1, velocity: -1.0, veloAngle: -1.0, lastOdd: 0, aircraftID: 1, latitude: -1.0, longitude: -1.0\n--End Msg Content--", result.toString());
-		assertEquals("AircraftException No1: \nAircraft Content: --Begin--\ndomain.Aircraft@4cb725b1, velocity: -1.0, veloAngle: -1.0, lastOdd: 0, aircraftID: 1, latitude: -1.0, longitude: -1.0\n--End Msg Content--", result.getLocalizedMessage());
-		assertEquals("AircraftException No1: \nAircraft Content: --Begin--\ndomain.Aircraft@4cb725b1, velocity: -1.0, veloAngle: -1.0, lastOdd: 0, aircraftID: 1, latitude: -1.0, longitude: -1.0\n--End Msg Content--", result.getMessage());
+		//assertEquals("exception.AircraftException: AircraftException No1: \nAircraft Content: --Begin--\ndomain.Aircraft@4cb725b1, velocity: -1.0, veloAngle: -1.0, lastOdd: 0, aircraftID: 1, latitude: -1.0, longitude: -1.0\n--End Msg Content--", result.toString());
+		//assertEquals("AircraftException No1: \nAircraft Content: --Begin--\ndomain.Aircraft@4cb725b1, velocity: -1.0, veloAngle: -1.0, lastOdd: 0, aircraftID: 1, latitude: -1.0, longitude: -1.0\n--End Msg Content--", result.getLocalizedMessage());
+		//assertEquals("AircraftException No1: \nAircraft Content: --Begin--\ndomain.Aircraft@4cb725b1, velocity: -1.0, veloAngle: -1.0, lastOdd: 0, aircraftID: 1, latitude: -1.0, longitude: -1.0\n--End Msg Content--", result.getMessage());
 	}
 
 	/**

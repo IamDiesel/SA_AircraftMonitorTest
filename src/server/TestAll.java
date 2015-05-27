@@ -15,8 +15,8 @@ import org.junit.runners.Suite;
  */
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
-	ControlTest.class,
-	WebServerTest.class,
+	//ControlTest.class,
+	//WebServerTest.class,
 	JedisAircraftServerTest.class,
 	A_Http2RedisTest.class,
 })

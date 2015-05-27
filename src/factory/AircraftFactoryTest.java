@@ -153,24 +153,13 @@ public class AircraftFactoryTest {
 	public void testUpdatePosition_1()
 		throws Exception {
 		AircraftFactory fixture = AircraftFactory.getInstance();
-		String msg = "";
-		Aircraft aircraft = new Aircraft(1);
+		String msg = "11;4216371;01011000101010111100000011110101000101100000110000011111000010001111001011011100;1431889696816";
+		Aircraft aircraft = new Aircraft(42);
 
 		fixture.updatePosition(msg, aircraft);
-
-		// add additional test code here
-		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.NullPointerException
-		//       at java.util.Calendar.setTime(Unknown Source)
-		//       at java.text.SimpleDateFormat.format(Unknown Source)
-		//       at java.text.SimpleDateFormat.format(Unknown Source)
-		//       at java.text.DateFormat.format(Unknown Source)
-		//       at domain.AdsMessage.toString(AdsMessage.java:66)
-		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:53)
-		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:33)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
-		//       at factory.AircraftFactory.updatePosition(AircraftFactory.java:47)
+		System.out.println(aircraft.toString());
+		System.out.println(aircraft.toJedisString());
+		assertEquals(aircraft.getID(),42);
 	}
 
 	/**
@@ -180,7 +169,7 @@ public class AircraftFactoryTest {
 	 *
 	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
-	@Test
+	@Test(expected = exception.AdsMessageException.class)
 	public void testUpdatePosition_2()
 		throws Exception {
 		AircraftFactory fixture = AircraftFactory.getInstance();
@@ -189,51 +178,9 @@ public class AircraftFactoryTest {
 
 		fixture.updatePosition(msg, aircraft);
 
-		// add additional test code here
-		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.NullPointerException
-		//       at java.util.Calendar.setTime(Unknown Source)
-		//       at java.text.SimpleDateFormat.format(Unknown Source)
-		//       at java.text.SimpleDateFormat.format(Unknown Source)
-		//       at java.text.DateFormat.format(Unknown Source)
-		//       at domain.AdsMessage.toString(AdsMessage.java:66)
-		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:53)
-		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:33)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
-		//       at factory.AircraftFactory.updatePosition(AircraftFactory.java:47)
+
 	}
 
-	/**
-	 * Run the void updatePosition(String,Aircraft) method test.
-	 *
-	 * @throws Exception
-	 *
-	 * @generatedBy CodePro at 25.05.15 12:07
-	 */
-	@Test
-	public void testUpdatePosition_3()
-		throws Exception {
-		AircraftFactory fixture = AircraftFactory.getInstance();
-		String msg = "";
-		Aircraft aircraft = new Aircraft(1);
-
-		fixture.updatePosition(msg, aircraft);
-
-		// add additional test code here
-		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.NullPointerException
-		//       at java.util.Calendar.setTime(Unknown Source)
-		//       at java.text.SimpleDateFormat.format(Unknown Source)
-		//       at java.text.SimpleDateFormat.format(Unknown Source)
-		//       at java.text.DateFormat.format(Unknown Source)
-		//       at domain.AdsMessage.toString(AdsMessage.java:66)
-		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:53)
-		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:33)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
-		//       at factory.AircraftFactory.updatePosition(AircraftFactory.java:47)
-	}
 
 	/**
 	 * Run the void updateVelocity(String,Aircraft) method test.

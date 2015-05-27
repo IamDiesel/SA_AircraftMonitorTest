@@ -21,8 +21,8 @@ public class SixBitASCIITest {
 	@Test
 	public void testBin2ASCII_1()
 		throws Exception {
-		String binString = "a";
-
+		String binString = "000100000001001110001001000101001100111111";
+		System.out.println(SixBitASCII.bin2ASCII("000100000001001110001001000101001100111111"));
 		String result = SixBitASCII.bin2ASCII(binString);
 
 		// add additional test code here
@@ -32,7 +32,7 @@ public class SixBitASCIITest {
 		//       a
 		//       --Ebd sixBitBinary-Code--
 		//       at translator.SixBitASCII.bin2ASCII(SixBitASCII.java:26)
-		assertNotNull(result);
+		assertEquals(result,"DANIEL?");
 	}
 
 	/**
@@ -42,10 +42,10 @@ public class SixBitASCIITest {
 	 *
 	 * @generatedBy CodePro at 25.05.15 12:07
 	 */
-	@Test
+	@Test(expected = exception.SixBitASCIIException.class)
 	public void testBin2ASCII_2()
 		throws Exception {
-		String binString = "a";
+		String binString = "12";
 
 		String result = SixBitASCII.bin2ASCII(binString);
 
@@ -87,18 +87,12 @@ public class SixBitASCIITest {
 	@Test
 	public void testBin2ASCII_4()
 		throws Exception {
-		String binString = "a";
+		String binString = "111111";
 
 		String result = SixBitASCII.bin2ASCII(binString);
 
-		// add additional test code here
-		// An unexpected exception was thrown in user code while executing this test:
-		//    exception.SixBitASCIIException: SixBitASCIIException No. 400: Binary String size mismatch. String length % 6 should be 0 but is: 1
-		//       --Begin sixBitBinary-Code--
-		//       a
-		//       --Ebd sixBitBinary-Code--
-		//       at translator.SixBitASCII.bin2ASCII(SixBitASCII.java:26)
 		assertNotNull(result);
+		assertEquals(result,"?");
 	}
 
 	/**
@@ -111,12 +105,12 @@ public class SixBitASCIITest {
 	@Test
 	public void testBin2ASCII_5()
 		throws Exception {
-		String binString = "";
+		String binString = "000000";
 
 		String result = SixBitASCII.bin2ASCII(binString);
 
 		// add additional test code here
-		assertEquals("", result);
+		assertEquals("@", result);
 	}
 
 	/**

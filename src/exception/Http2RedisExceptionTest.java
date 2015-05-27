@@ -1,8 +1,14 @@
 package exception;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+
+import java.net.URL;
 import java.net.URLConnection;
-import org.junit.*;
-import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
 
 /**
  * The class <code>Http2RedisExceptionTest</code> contains tests for the class <code>{@link Http2RedisException}</code>.
@@ -51,7 +57,7 @@ public class Http2RedisExceptionTest {
 		int errNo = 1;
 		String errDescription = "";
 		byte[] buffer = new byte[] {};
-		URLConnection con = null;
+		URLConnection con = new URL("http://www.google.de").openConnection();
 		String message = "";
 
 		Http2RedisException result = new Http2RedisException(errNo, errDescription, buffer, con, message);
@@ -73,7 +79,9 @@ public class Http2RedisExceptionTest {
 	@Test
 	public void testGetBuffer_1()
 		throws Exception {
-		Http2RedisException fixture = new Http2RedisException(1, "", new byte[] {}, (URLConnection) null, "");
+		URLConnection url = new URL("http://www.google.de").openConnection();
+		
+		Http2RedisException fixture = new Http2RedisException(1, "Fehler", new byte[] {0,0,0,0},url, "a");
 		fixture.addSuppressed(new Throwable());
 
 		byte[] result = fixture.getBuffer();
@@ -95,7 +103,7 @@ public class Http2RedisExceptionTest {
 	@Test
 	public void testGetMessageString_1()
 		throws Exception {
-		Http2RedisException fixture = new Http2RedisException(1, "", new byte[] {}, (URLConnection) null, "");
+		Http2RedisException fixture = new Http2RedisException(1, "", new byte[] {}, new URL("http://www.google.de").openConnection(), "");
 		fixture.addSuppressed(new Throwable());
 
 		String result = fixture.getMessageString();
@@ -117,7 +125,7 @@ public class Http2RedisExceptionTest {
 	@Test
 	public void testGetURLConnection_1()
 		throws Exception {
-		Http2RedisException fixture = new Http2RedisException(1, "", new byte[] {}, (URLConnection) null, "");
+		Http2RedisException fixture = new Http2RedisException(1, "", new byte[] {}, new URL("http://www.google.de").openConnection(), "");
 		fixture.addSuppressed(new Throwable());
 
 		URLConnection result = fixture.getURLConnection();
