@@ -110,7 +110,7 @@ public class AdsMessageTest {
 	 *
 	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
-	@Test(expected = exception.AdsMessageException.class)
+	@Test(expected = java.lang.NumberFormatException.class)
 	public void testAdsMessage_6()
 		throws Exception {
 		String jedisString = "19;4901205;1431508173375;10011001010000001001101100110101111000000101000000011010010011101000001011100110";
@@ -128,7 +128,7 @@ public class AdsMessageTest {
 	 *
 	 * @generatedBy CodePro at 24.05.15 21:19
 	 */
-	@Test(expected = exception.AdsMessageException.class)
+	@Test(expected = java.lang.AssertionError.class)
 	public void testAdsMessage_7()
 		throws Exception {
 		String jedisString = "4901205;19;10011001010000001001101100110101111000000101000000011010010011101000001011100110;1431508173375";
@@ -178,16 +178,9 @@ public class AdsMessageTest {
 		int originatorD = 4901205;
 		long time = 1431508173375L;
 		AdsMessage result = null;
-		try
-		{
-			result = new AdsMessage(binarySentence, messageTypeD, originatorD, time);
-		}
-		catch(AdsMessageException e)
-		{
-			System.out.print(e.getMessage());
-			String test = "AdsMessageException No0: Binary Sentence too short (binarySentence size =110).";
-			assertEquals(test,e.getMessage());
-		}
+		
+		result = new AdsMessage(binarySentence, messageTypeD, originatorD, time);
+		
 		// add additional test code here
 		assertNull(result);
 	}

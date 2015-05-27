@@ -1,6 +1,7 @@
 package domain;
 
 import org.junit.*;
+import org.junit.rules.ExpectedException;
 import static org.junit.Assert.*;
 import exception.AircraftException;
 
@@ -48,14 +49,47 @@ public class AircraftTest {
 	@Test(expected = exception.AircraftException.class)
 	public void testAircraft_2()
 		throws Exception {
-		String jedisString = "";
-
-		Aircraft result = new Aircraft(jedisString);
-
+		String jedisString = "11,4901205";
+		Aircraft result = null;
+		try
+		{
+		 result = new Aircraft(jedisString);
+		}
+		catch(AircraftException e)
+		{
+			e.printStackTrace();
+			throw e;
+		}
+		assertNull(result);
 		// add additional test code here
-		assertNotNull(result);
 	}
 
+	/**
+	 * Run the Aircraft(String) constructor test.
+	 *
+	 * @throws Exception
+	 * 
+	 * @generatedBy CodePro at 25.05.15 12:08
+	 */
+	@Test
+	public void testAircrat_3()
+		throws Exception {
+		String jedisString = "4901205,SAS606,456.7450054461461,19.70445359967343,49.17196500099311,9.462553325452301,1,12;4901205;01100000101111110011000011000100110101000000110001001011001111111110000001011010;1431508159805,12;4901205;01100000101111111100010000111100001001111111111101100110111000101100010110100111;1431508169595";
+		Aircraft result = null;
+		try
+		{
+			result = new Aircraft(jedisString);
+		}
+		catch(AircraftException e)
+		{
+			e.printStackTrace();
+			throw e;
+		}	
+				
+		// add additional test code here
+		assertNotNull(result);
+		assertEquals(result.toJedisString(),"4901205,SAS606,456.7450054461461,19.70445359967343,49.17196500099311,9.462553325452301,1,12;4901205;01100000101111110011000011000100110101000000110001001011001111111110000001011010;1431508159805,12;4901205;01100000101111111100010000111100001001111111111101100110111000101100010110100111;1431508169595");
+	}
 	/**
 	 * Run the Aircraft(String) constructor test.
 	 *
@@ -63,269 +97,16 @@ public class AircraftTest {
 	 *
 	 * @generatedBy CodePro at 25.05.15 12:08
 	 */
-	@Test(expected = exception.AircraftException.class)
-	public void testAircraft_3()
+	@Test(expected =java.lang.NumberFormatException.class)
+	public void testAircrat_4()
 		throws Exception {
-		String jedisString = "a";
-
+		String jedisString = "SAS606,4901205,456.7450054461461,19.70445359967343,49.17196500099311,9.462553325452301,1,12;4901205;01100000101111110011000011000100110101000000110001001011001111111110000001011010;1431508159805,12;4901205;01100000101111111100010000111100001001111111111101100110111000101100010110100111;1431508169595";
 		Aircraft result = new Aircraft(jedisString);
-
 		// add additional test code here
 		assertNotNull(result);
+		assertEquals(result.toJedisString(),"SAS606,4901205,456.7450054461461,19.70445359967343,49.17196500099311,9.462553325452301,1,12;4901205;01100000101111110011000011000100110101000000110001001011001111111110000001011010;1431508159805,12;4901205;01100000101111111100010000111100001001111111111101100110111000101100010110100111;1431508169595");
 	}
-
-	/**
-	 * Run the Aircraft(String) constructor test.
-	 *
-	 * @throws Exception
-	 *
-	 * @generatedBy CodePro at 25.05.15 12:08
-	 */
-	@Test(expected = exception.AircraftException.class)
-	public void testAircraft_4()
-		throws Exception {
-		String jedisString = "a";
-
-		Aircraft result = new Aircraft(jedisString);
-
-		// add additional test code here
-		assertNotNull(result);
-	}
-
-	/**
-	 * Run the Aircraft(String) constructor test.
-	 *
-	 * @throws Exception
-	 *
-	 * @generatedBy CodePro at 25.05.15 12:08
-	 */
-	@Test(expected = exception.AircraftException.class)
-	public void testAircraft_5()
-		throws Exception {
-		String jedisString = "a";
-
-		Aircraft result = new Aircraft(jedisString);
-
-		// add additional test code here
-		assertNotNull(result);
-	}
-
-	/**
-	 * Run the Aircraft(String) constructor test.
-	 *
-	 * @throws Exception
-	 *
-	 * @generatedBy CodePro at 25.05.15 12:08
-	 */
-	@Test(expected = exception.AircraftException.class)
-	public void testAircraft_6()
-		throws Exception {
-		String jedisString = "a";
-
-		Aircraft result = new Aircraft(jedisString);
-
-		// add additional test code here
-		assertNotNull(result);
-	}
-
-	/**
-	 * Run the Aircraft(String) constructor test.
-	 *
-	 * @throws Exception
-	 *
-	 * @generatedBy CodePro at 25.05.15 12:08
-	 */
-	@Test(expected = exception.AircraftException.class)
-	public void testAircraft_7()
-		throws Exception {
-		String jedisString = "a";
-
-		Aircraft result = new Aircraft(jedisString);
-
-		// add additional test code here
-		assertNotNull(result);
-	}
-
-	/**
-	 * Run the Aircraft(String) constructor test.
-	 *
-	 * @throws Exception
-	 *
-	 * @generatedBy CodePro at 25.05.15 12:08
-	 */
-	@Test(expected = exception.AircraftException.class)
-	public void testAircraft_8()
-		throws Exception {
-		String jedisString = "a";
-
-		Aircraft result = new Aircraft(jedisString);
-
-		// add additional test code here
-		assertNotNull(result);
-	}
-
-	/**
-	 * Run the Aircraft(String) constructor test.
-	 *
-	 * @throws Exception
-	 *
-	 * @generatedBy CodePro at 25.05.15 12:08
-	 */
-	@Test(expected = exception.AircraftException.class)
-	public void testAircraft_9()
-		throws Exception {
-		String jedisString = "a";
-
-		Aircraft result = new Aircraft(jedisString);
-
-		// add additional test code here
-		assertNotNull(result);
-	}
-
-	/**
-	 * Run the Aircraft(String) constructor test.
-	 *
-	 * @throws Exception
-	 *
-	 * @generatedBy CodePro at 25.05.15 12:08
-	 */
-	@Test(expected = exception.AircraftException.class)
-	public void testAircraft_10()
-		throws Exception {
-		String jedisString = "a";
-
-		Aircraft result = new Aircraft(jedisString);
-
-		// add additional test code here
-		assertNotNull(result);
-	}
-
-	/**
-	 * Run the Aircraft(String) constructor test.
-	 *
-	 * @throws Exception
-	 *
-	 * @generatedBy CodePro at 25.05.15 12:08
-	 */
-	@Test(expected = exception.AircraftException.class)
-	public void testAircraft_11()
-		throws Exception {
-		String jedisString = "a";
-
-		Aircraft result = new Aircraft(jedisString);
-
-		// add additional test code here
-		assertNotNull(result);
-	}
-
-	/**
-	 * Run the Aircraft(String) constructor test.
-	 *
-	 * @throws Exception
-	 *
-	 * @generatedBy CodePro at 25.05.15 12:08
-	 */
-	@Test(expected = exception.AircraftException.class)
-	public void testAircraft_12()
-		throws Exception {
-		String jedisString = "a";
-
-		Aircraft result = new Aircraft(jedisString);
-
-		// add additional test code here
-		assertNotNull(result);
-	}
-
-	/**
-	 * Run the Aircraft(String) constructor test.
-	 *
-	 * @throws Exception
-	 *
-	 * @generatedBy CodePro at 25.05.15 12:08
-	 */
-	@Test(expected = exception.AircraftException.class)
-	public void testAircraft_13()
-		throws Exception {
-		String jedisString = "a";
-
-		Aircraft result = new Aircraft(jedisString);
-
-		// add additional test code here
-		assertNotNull(result);
-	}
-
-	/**
-	 * Run the Aircraft(String) constructor test.
-	 *
-	 * @throws Exception
-	 *
-	 * @generatedBy CodePro at 25.05.15 12:08
-	 */
-	@Test(expected = exception.AircraftException.class)
-	public void testAircraft_14()
-		throws Exception {
-		String jedisString = "a";
-
-		Aircraft result = new Aircraft(jedisString);
-
-		// add additional test code here
-		assertNotNull(result);
-	}
-
-	/**
-	 * Run the Aircraft(String) constructor test.
-	 *
-	 * @throws Exception
-	 *
-	 * @generatedBy CodePro at 25.05.15 12:08
-	 */
-	@Test(expected = exception.AircraftException.class)
-	public void testAircraft_15()
-		throws Exception {
-		String jedisString = "a";
-
-		Aircraft result = new Aircraft(jedisString);
-
-		// add additional test code here
-		assertNotNull(result);
-	}
-
-	/**
-	 * Run the Aircraft(String) constructor test.
-	 *
-	 * @throws Exception
-	 *
-	 * @generatedBy CodePro at 25.05.15 12:08
-	 */
-	@Test(expected = exception.AircraftException.class)
-	public void testAircraft_16()
-		throws Exception {
-		String jedisString = "a";
-
-		Aircraft result = new Aircraft(jedisString);
-
-		// add additional test code here
-		assertNotNull(result);
-	}
-
-	/**
-	 * Run the Aircraft(String) constructor test.
-	 *
-	 * @throws Exception
-	 *
-	 * @generatedBy CodePro at 25.05.15 12:08
-	 */
-	@Test(expected = exception.AircraftException.class)
-	public void testAircraft_17()
-		throws Exception {
-		String jedisString = "a";
-
-		Aircraft result = new Aircraft(jedisString);
-
-		// add additional test code here
-		assertNotNull(result);
-	}
-
+	
 	/**
 	 * Run the AirbornePositionMessage getEven() method test.
 	 *
@@ -333,7 +114,7 @@ public class AircraftTest {
 	 *
 	 * @generatedBy CodePro at 25.05.15 12:08
 	 */
-	@Test
+	@Test(expected = exception.AdsMessageException.class)
 	public void testGetEven_1()
 		throws Exception {
 		Aircraft fixture = new Aircraft(1);
@@ -348,18 +129,6 @@ public class AircraftTest {
 
 		AirbornePositionMessage result = fixture.getEven();
 
-		// add additional test code here
-		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.NullPointerException
-		//       at java.util.Calendar.setTime(Unknown Source)
-		//       at java.text.SimpleDateFormat.format(Unknown Source)
-		//       at java.text.SimpleDateFormat.format(Unknown Source)
-		//       at java.text.DateFormat.format(Unknown Source)
-		//       at domain.AdsMessage.toString(AdsMessage.java:66)
-		//       at domain.AirbornePositionMessage.toString(AirbornePositionMessage.java:53)
-		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
-		//       at domain.AdsMessage.<init>(AdsMessage.java:33)
-		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 		assertNotNull(result);
 	}
 
@@ -376,11 +145,11 @@ public class AircraftTest {
 		Aircraft fixture = new Aircraft(1);
 		fixture.setLongitude(1.0);
 		fixture.setLastOdd(1);
-		fixture.setOddMsg(new AirbornePositionMessage(""));
+		fixture.setOddMsg(new AirbornePositionMessage("11;5022296;01011000110000111000010000011001000001011111100101110011110110100111011011001001;1432557564600"));
 		fixture.setLatitude(1.0);
 		fixture.setFlightNo("");
 		fixture.setVelocity(1.0);
-		fixture.setEvenMsg((AirbornePositionMessage) null);
+		fixture.setEvenMsg(new AirbornePositionMessage("11;5022296;01011000110000111000010000011001000001011111100101110011110110100111011011001001;1432557564600"));
 		fixture.setVeloAngle(1.0);
 
 		AirbornePositionMessage result = fixture.getEven();
@@ -398,6 +167,7 @@ public class AircraftTest {
 		//       at domain.AdsMessage.<init>(AdsMessage.java:33)
 		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
 		assertNotNull(result);
+		assertEquals(result.toJedisString(),"11;5022296;01011000110000111000010000011001000001011111100101110011110110100111011011001001;1432557564600");
 	}
 
 	/**
@@ -410,14 +180,14 @@ public class AircraftTest {
 	@Test
 	public void testGetID_1()
 		throws Exception {
-		Aircraft fixture = new Aircraft(1);
+		Aircraft fixture = new Aircraft(42);
 		fixture.setLongitude(1.0);
 		fixture.setLastOdd(1);
-		fixture.setOddMsg(new AirbornePositionMessage(""));
+		fixture.setOddMsg(new AirbornePositionMessage("11;5022296;01011000110000111000010000011001000001011111100101110011110110100111011011001001;1432557564600"));
 		fixture.setLatitude(1.0);
 		fixture.setFlightNo("");
 		fixture.setVelocity(1.0);
-		fixture.setEvenMsg(new AirbornePositionMessage(""));
+		fixture.setEvenMsg(new AirbornePositionMessage("11;5022296;01011000110000111000010000011001000001011111100101110011110110100111011011001001;1432557564600"));
 		fixture.setVeloAngle(1.0);
 
 		int result = fixture.getID();
@@ -434,7 +204,7 @@ public class AircraftTest {
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:33)
 		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
-		assertEquals(0, result);
+		assertEquals(42, result);
 	}
 
 	/**
@@ -450,11 +220,11 @@ public class AircraftTest {
 		Aircraft fixture = new Aircraft(1);
 		fixture.setLongitude(1.0);
 		fixture.setLastOdd(1);
-		fixture.setOddMsg(new AirbornePositionMessage(""));
+		fixture.setOddMsg(new AirbornePositionMessage("11;5022296;01011000110000111000010000011001000001011111100101110011110110100111011011001001;1432557564600"));
 		fixture.setLatitude(1.0);
 		fixture.setFlightNo("");
 		fixture.setVelocity(1.0);
-		fixture.setEvenMsg(new AirbornePositionMessage(""));
+		fixture.setEvenMsg(new AirbornePositionMessage("11;5022296;01011000110000111000010000011001000001011111100101110011110110100111011011001001;1432557564600"));
 		fixture.setVeloAngle(1.0);
 
 		int result = fixture.getLastOdd();
@@ -487,11 +257,11 @@ public class AircraftTest {
 		Aircraft fixture = new Aircraft(1);
 		fixture.setLongitude(1.0);
 		fixture.setLastOdd(1);
-		fixture.setOddMsg(new AirbornePositionMessage(""));
+		fixture.setOddMsg(new AirbornePositionMessage("11;5022296;01011000110000111000010000011001000001011111100101110011110110100111011011001001;1432557564600"));
 		fixture.setLatitude(1.0);
 		fixture.setFlightNo("");
 		fixture.setVelocity(1.0);
-		fixture.setEvenMsg(new AirbornePositionMessage(""));
+		fixture.setEvenMsg(new AirbornePositionMessage("11;5022296;01011000110000111000010000011001000001011111100101110011110110100111011011001001;1432557564600"));
 		fixture.setVeloAngle(1.0);
 
 		AirbornePositionMessage result = fixture.getOdd();
@@ -518,7 +288,7 @@ public class AircraftTest {
 	 *
 	 * @generatedBy CodePro at 25.05.15 12:08
 	 */
-	@Test
+	@Test(expected = exception.AdsMessageException.class)
 	public void testGetOdd_2()
 		throws Exception {
 		Aircraft fixture = new Aircraft(1);
@@ -558,14 +328,14 @@ public class AircraftTest {
 	@Test
 	public void testGetVeloAngle_1()
 		throws Exception {
-		Aircraft fixture = new Aircraft(1);
+		Aircraft fixture = new Aircraft(42);
 		fixture.setLongitude(1.0);
 		fixture.setLastOdd(1);
-		fixture.setOddMsg(new AirbornePositionMessage(""));
+		fixture.setOddMsg(new AirbornePositionMessage("11;5022296;01011000110000111000010000011001000001011111100101110011110110100111011011001001;1432557564600"));
 		fixture.setLatitude(1.0);
 		fixture.setFlightNo("");
 		fixture.setVelocity(1.0);
-		fixture.setEvenMsg(new AirbornePositionMessage(""));
+		fixture.setEvenMsg(new AirbornePositionMessage("11;5022296;01011000110000111000010000011001000001011111100101110011110110100111011011001001;1432557564600"));
 		fixture.setVeloAngle(1.0);
 
 		double result = fixture.getVeloAngle();
@@ -582,7 +352,7 @@ public class AircraftTest {
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:33)
 		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
-		assertEquals(0.0, result, 0.1);
+		assertEquals(1.0, result, 1.1);
 	}
 
 	/**
@@ -595,14 +365,14 @@ public class AircraftTest {
 	@Test
 	public void testGetVelocity_1()
 		throws Exception {
-		Aircraft fixture = new Aircraft(1);
+		Aircraft fixture = new Aircraft(42);
 		fixture.setLongitude(1.0);
 		fixture.setLastOdd(1);
-		fixture.setOddMsg(new AirbornePositionMessage(""));
+		fixture.setOddMsg(new AirbornePositionMessage("11;5022296;01011000110000111000010000011001000001011111100101110011110110100111011011001001;1432557564600"));
 		fixture.setLatitude(1.0);
 		fixture.setFlightNo("");
 		fixture.setVelocity(1.0);
-		fixture.setEvenMsg(new AirbornePositionMessage(""));
+		fixture.setEvenMsg(new AirbornePositionMessage("11;5022296;01011000110000111000010000011001000001011111100101110011110110100111011011001001;1432557564600"));
 		fixture.setVeloAngle(1.0);
 
 		double result = fixture.getVelocity();
@@ -619,7 +389,7 @@ public class AircraftTest {
 		//       at exception.AdsMessageException.<init>(AdsMessageException.java:14)
 		//       at domain.AdsMessage.<init>(AdsMessage.java:33)
 		//       at domain.AirbornePositionMessage.<init>(AirbornePositionMessage.java:14)
-		assertEquals(0.0, result, 0.1);
+		assertEquals(1.0, result, 1.1);
 	}
 
 	/**
@@ -635,11 +405,11 @@ public class AircraftTest {
 		Aircraft fixture = new Aircraft(1);
 		fixture.setLongitude(1.0);
 		fixture.setLastOdd(1);
-		fixture.setOddMsg(new AirbornePositionMessage(""));
+		fixture.setOddMsg(new AirbornePositionMessage("11;5022296;01011000110000111000010000011001000001011111100101110011110110100111011011001001;1432557564600"));
 		fixture.setLatitude(1.0);
 		fixture.setFlightNo("");
 		fixture.setVelocity(1.0);
-		fixture.setEvenMsg(new AirbornePositionMessage(""));
+		fixture.setEvenMsg(new AirbornePositionMessage("11;5022296;01011000110000111000010000011001000001011111100101110011110110100111011011001001;1432557564600"));
 		fixture.setVeloAngle(1.0);
 
 		fixture.print();
@@ -671,11 +441,11 @@ public class AircraftTest {
 		Aircraft fixture = new Aircraft(1);
 		fixture.setLongitude(1.0);
 		fixture.setLastOdd(1);
-		fixture.setOddMsg(new AirbornePositionMessage(""));
+		fixture.setOddMsg(new AirbornePositionMessage("11;5022296;01011000110000111000010000011001000001011111100101110011110110100111011011001001;1432557564600"));
 		fixture.setLatitude(1.0);
 		fixture.setFlightNo("");
 		fixture.setVelocity(-1);
-		fixture.setEvenMsg(new AirbornePositionMessage(""));
+		fixture.setEvenMsg(new AirbornePositionMessage("11;5022296;01011000110000111000010000011001000001011111100101110011110110100111011011001001;1432557564600"));
 		fixture.setVeloAngle(1.0);
 
 		fixture.print();
@@ -707,11 +477,11 @@ public class AircraftTest {
 		Aircraft fixture = new Aircraft(1);
 		fixture.setLongitude(1.0);
 		fixture.setLastOdd(1);
-		fixture.setOddMsg(new AirbornePositionMessage(""));
+		fixture.setOddMsg(new AirbornePositionMessage("11;5022296;01011000110000111000010000011001000001011111100101110011110110100111011011001001;1432557564600"));
 		fixture.setLatitude(1.0);
 		fixture.setFlightNo("");
 		fixture.setVelocity(1.0);
-		fixture.setEvenMsg(new AirbornePositionMessage(""));
+		fixture.setEvenMsg(new AirbornePositionMessage("11;5022296;01011000110000111000010000011001000001011111100101110011110110100111011011001001;1432557564600"));
 		fixture.setVeloAngle(-1);
 
 		fixture.print();
@@ -743,11 +513,11 @@ public class AircraftTest {
 		Aircraft fixture = new Aircraft(1);
 		fixture.setLongitude(1.0);
 		fixture.setLastOdd(1);
-		fixture.setOddMsg(new AirbornePositionMessage(""));
+		fixture.setOddMsg(new AirbornePositionMessage("11;5022296;01011000110000111000010000011001000001011111100101110011110110100111011011001001;1432557564600"));
 		fixture.setLatitude(-1);
 		fixture.setFlightNo("");
 		fixture.setVelocity(1.0);
-		fixture.setEvenMsg(new AirbornePositionMessage(""));
+		fixture.setEvenMsg(new AirbornePositionMessage("11;5022296;01011000110000111000010000011001000001011111100101110011110110100111011011001001;1432557564600"));
 		fixture.setVeloAngle(1.0);
 
 		fixture.print();
@@ -779,11 +549,11 @@ public class AircraftTest {
 		Aircraft fixture = new Aircraft(1);
 		fixture.setLongitude(1.0);
 		fixture.setLastOdd(1);
-		fixture.setOddMsg(new AirbornePositionMessage(""));
+		fixture.setOddMsg(new AirbornePositionMessage("11;5022296;01011000110000111000010000011001000001011111100101110011110110100111011011001001;1432557564600"));
 		fixture.setLatitude(-1);
 		fixture.setFlightNo("");
 		fixture.setVelocity(-1);
-		fixture.setEvenMsg(new AirbornePositionMessage(""));
+		fixture.setEvenMsg(new AirbornePositionMessage("11;5022296;01011000110000111000010000011001000001011111100101110011110110100111011011001001;1432557564600"));
 		fixture.setVeloAngle(-1);
 
 		fixture.print();
@@ -815,11 +585,11 @@ public class AircraftTest {
 		Aircraft fixture = new Aircraft(1);
 		fixture.setLongitude(-1);
 		fixture.setLastOdd(1);
-		fixture.setOddMsg(new AirbornePositionMessage(""));
+		fixture.setOddMsg(new AirbornePositionMessage("11;5022296;01011000110000111000010000011001000001011111100101110011110110100111011011001001;1432557564600"));
 		fixture.setLatitude(1.0);
 		fixture.setFlightNo("");
 		fixture.setVelocity(1.0);
-		fixture.setEvenMsg(new AirbornePositionMessage(""));
+		fixture.setEvenMsg(new AirbornePositionMessage("11;5022296;01011000110000111000010000011001000001011111100101110011110110100111011011001001;1432557564600"));
 		fixture.setVeloAngle(1.0);
 
 		fixture.print();
@@ -851,11 +621,11 @@ public class AircraftTest {
 		Aircraft fixture = new Aircraft(1);
 		fixture.setLongitude(1.0);
 		fixture.setLastOdd(1);
-		fixture.setOddMsg((AirbornePositionMessage) null);
+		fixture.setOddMsg(new AirbornePositionMessage("11;5022296;01011000110000111000010000011001000001011111100101110011110110100111011011001001;1432557564600"));
 		fixture.setLatitude(1.0);
 		fixture.setFlightNo("");
 		fixture.setVelocity(1.0);
-		fixture.setEvenMsg(new AirbornePositionMessage(""));
+		fixture.setEvenMsg(new AirbornePositionMessage("11;5022296;01011000110000111000010000011001000001011111100101110011110110100111011011001001;1432557564600"));
 		fixture.setVeloAngle(1.0);
 
 		fixture.print();
@@ -891,7 +661,7 @@ public class AircraftTest {
 		fixture.setLatitude(-1);
 		fixture.setFlightNo("");
 		fixture.setVelocity(-1);
-		fixture.setEvenMsg(new AirbornePositionMessage(""));
+		fixture.setEvenMsg(new AirbornePositionMessage("11;5022296;01011000110000111000010000011001000001011111100101110011110110100111011011001001;1432557564600"));
 		fixture.setVeloAngle(-1);
 
 		fixture.print();
@@ -923,7 +693,7 @@ public class AircraftTest {
 		Aircraft fixture = new Aircraft(1);
 		fixture.setLongitude(1.0);
 		fixture.setLastOdd(1);
-		fixture.setOddMsg(new AirbornePositionMessage(""));
+		fixture.setOddMsg(new AirbornePositionMessage("11;5022296;01011000110000111000010000011001000001011111100101110011110110100111011011001001;1432557564600"));
 		fixture.setLatitude(1.0);
 		fixture.setFlightNo("");
 		fixture.setVelocity(1.0);
@@ -959,7 +729,7 @@ public class AircraftTest {
 		Aircraft fixture = new Aircraft(1);
 		fixture.setLongitude(-1);
 		fixture.setLastOdd(1);
-		fixture.setOddMsg(new AirbornePositionMessage(""));
+		fixture.setOddMsg(new AirbornePositionMessage("11;5022296;01011000110000111000010000011001000001011111100101110011110110100111011011001001;1432557564600"));
 		fixture.setLatitude(-1);
 		fixture.setFlightNo("");
 		fixture.setVelocity(-1);
@@ -1139,7 +909,7 @@ public class AircraftTest {
 	 *
 	 * @generatedBy CodePro at 25.05.15 12:08
 	 */
-	@Test
+	@Test(expected = exception.AdsMessageException.class)
 	public void testSetEvenMsg_1()
 		throws Exception {
 		Aircraft fixture = new Aircraft(1);
@@ -1182,11 +952,11 @@ public class AircraftTest {
 		Aircraft fixture = new Aircraft(1);
 		fixture.setLongitude(1.0);
 		fixture.setLastOdd(1);
-		fixture.setOddMsg(new AirbornePositionMessage(""));
+		fixture.setOddMsg(new AirbornePositionMessage("11;5022296;01011000110000111000010000011001000001011111100101110011110110100111011011001001;1432557564600"));
 		fixture.setLatitude(1.0);
 		fixture.setFlightNo("");
 		fixture.setVelocity(1.0);
-		fixture.setEvenMsg(new AirbornePositionMessage(""));
+		fixture.setEvenMsg(new AirbornePositionMessage("11;5022296;01011000110000111000010000011001000001011111100101110011110110100111011011001001;1432557564600"));
 		fixture.setVeloAngle(1.0);
 		String no = "";
 
@@ -1219,11 +989,11 @@ public class AircraftTest {
 		Aircraft fixture = new Aircraft(1);
 		fixture.setLongitude(1.0);
 		fixture.setLastOdd(1);
-		fixture.setOddMsg(new AirbornePositionMessage(""));
+		fixture.setOddMsg(new AirbornePositionMessage("11;5022296;01011000110000111000010000011001000001011111100101110011110110100111011011001001;1432557564600"));
 		fixture.setLatitude(1.0);
 		fixture.setFlightNo("");
 		fixture.setVelocity(1.0);
-		fixture.setEvenMsg(new AirbornePositionMessage(""));
+		fixture.setEvenMsg(new AirbornePositionMessage("11;5022296;01011000110000111000010000011001000001011111100101110011110110100111011011001001;1432557564600"));
 		fixture.setVeloAngle(1.0);
 		int i = 1;
 
@@ -1256,11 +1026,11 @@ public class AircraftTest {
 		Aircraft fixture = new Aircraft(1);
 		fixture.setLongitude(1.0);
 		fixture.setLastOdd(1);
-		fixture.setOddMsg(new AirbornePositionMessage(""));
+		fixture.setOddMsg(new AirbornePositionMessage("11;5022296;01011000110000111000010000011001000001011111100101110011110110100111011011001001;1432557564600"));
 		fixture.setLatitude(1.0);
 		fixture.setFlightNo("");
 		fixture.setVelocity(1.0);
-		fixture.setEvenMsg(new AirbornePositionMessage(""));
+		fixture.setEvenMsg(new AirbornePositionMessage("11;5022296;01011000110000111000010000011001000001011111100101110011110110100111011011001001;1432557564600"));
 		fixture.setVeloAngle(1.0);
 		double lat = 1.0;
 
@@ -1293,11 +1063,11 @@ public class AircraftTest {
 		Aircraft fixture = new Aircraft(1);
 		fixture.setLongitude(1.0);
 		fixture.setLastOdd(1);
-		fixture.setOddMsg(new AirbornePositionMessage(""));
+		fixture.setOddMsg(new AirbornePositionMessage("11;5022296;01011000110000111000010000011001000001011111100101110011110110100111011011001001;1432557564600"));
 		fixture.setLatitude(1.0);
 		fixture.setFlightNo("");
 		fixture.setVelocity(1.0);
-		fixture.setEvenMsg(new AirbornePositionMessage(""));
+		fixture.setEvenMsg(new AirbornePositionMessage("11;5022296;01011000110000111000010000011001000001011111100101110011110110100111011011001001;1432557564600"));
 		fixture.setVeloAngle(1.0);
 		double lon = 1.0;
 
@@ -1330,13 +1100,13 @@ public class AircraftTest {
 		Aircraft fixture = new Aircraft(1);
 		fixture.setLongitude(1.0);
 		fixture.setLastOdd(1);
-		fixture.setOddMsg(new AirbornePositionMessage(""));
+		fixture.setOddMsg(new AirbornePositionMessage("11;5022296;01011000110000111000010000011001000001011111100101110011110110100111011011001001;1432557564600"));
 		fixture.setLatitude(1.0);
 		fixture.setFlightNo("");
 		fixture.setVelocity(1.0);
-		fixture.setEvenMsg(new AirbornePositionMessage(""));
+		fixture.setEvenMsg(new AirbornePositionMessage("11;5022296;01011000110000111000010000011001000001011111100101110011110110100111011011001001;1432557564600"));
 		fixture.setVeloAngle(1.0);
-		AirbornePositionMessage odd = new AirbornePositionMessage("");
+		AirbornePositionMessage odd = new AirbornePositionMessage("11;5022296;01011000110000111000010000011001000001011111100101110011110110100111011011001001;1432557564600");
 
 		fixture.setOddMsg(odd);
 
@@ -1367,11 +1137,11 @@ public class AircraftTest {
 		Aircraft fixture = new Aircraft(1);
 		fixture.setLongitude(1.0);
 		fixture.setLastOdd(1);
-		fixture.setOddMsg(new AirbornePositionMessage(""));
+		fixture.setOddMsg(new AirbornePositionMessage("11;5022296;01011000110000111000010000011001000001011111100101110011110110100111011011001001;1432557564600"));
 		fixture.setLatitude(1.0);
 		fixture.setFlightNo("");
 		fixture.setVelocity(1.0);
-		fixture.setEvenMsg(new AirbornePositionMessage(""));
+		fixture.setEvenMsg(new AirbornePositionMessage("11;5022296;01011000110000111000010000011001000001011111100101110011110110100111011011001001;1432557564600"));
 		fixture.setVeloAngle(1.0);
 		double angle = 1.0;
 
@@ -1404,11 +1174,11 @@ public class AircraftTest {
 		Aircraft fixture = new Aircraft(1);
 		fixture.setLongitude(1.0);
 		fixture.setLastOdd(1);
-		fixture.setOddMsg(new AirbornePositionMessage(""));
+		fixture.setOddMsg(new AirbornePositionMessage("11;5022296;01011000110000111000010000011001000001011111100101110011110110100111011011001001;1432557564600"));
 		fixture.setLatitude(1.0);
 		fixture.setFlightNo("");
 		fixture.setVelocity(1.0);
-		fixture.setEvenMsg(new AirbornePositionMessage(""));
+		fixture.setEvenMsg(new AirbornePositionMessage("11;5022296;01011000110000111000010000011001000001011111100101110011110110100111011011001001;1432557564600"));
 		fixture.setVeloAngle(1.0);
 		double velo = 1.0;
 
@@ -1441,11 +1211,11 @@ public class AircraftTest {
 		Aircraft fixture = new Aircraft(1);
 		fixture.setLongitude(1.0);
 		fixture.setLastOdd(1);
-		fixture.setOddMsg(new AirbornePositionMessage(""));
+		fixture.setOddMsg(new AirbornePositionMessage("11;5022296;01011000110000111000010000011001000001011111100101110011110110100111011011001001;1432557564600"));
 		fixture.setLatitude(1.0);
 		fixture.setFlightNo("");
 		fixture.setVelocity(1.0);
-		fixture.setEvenMsg(new AirbornePositionMessage(""));
+		fixture.setEvenMsg(new AirbornePositionMessage("11;5022296;01011000110000111000010000011001000001011111100101110011110110100111011011001001;1432557564600"));
 		fixture.setVeloAngle(1.0);
 
 		String result = fixture.toJedisKey();
@@ -1478,7 +1248,7 @@ public class AircraftTest {
 		Aircraft fixture = new Aircraft(1);
 		fixture.setLongitude(1.0);
 		fixture.setLastOdd(1);
-		fixture.setOddMsg(new AirbornePositionMessage(""));
+		fixture.setOddMsg(new AirbornePositionMessage("11;5022296;01011000110000111000010000011001000001011111100101110011110110100111011011001001;1432557564600"));
 		fixture.setLatitude(1.0);
 		fixture.setFlightNo("");
 		fixture.setVelocity(1.0);
@@ -1519,7 +1289,7 @@ public class AircraftTest {
 		fixture.setLatitude(1.0);
 		fixture.setFlightNo("");
 		fixture.setVelocity(1.0);
-		fixture.setEvenMsg(new AirbornePositionMessage(""));
+		fixture.setEvenMsg(new AirbornePositionMessage("11;5022296;01011000110000111000010000011001000001011111100101110011110110100111011011001001;1432557564600"));
 		fixture.setVeloAngle(1.0);
 
 		String result = fixture.toJedisString();
@@ -1552,11 +1322,11 @@ public class AircraftTest {
 		Aircraft fixture = new Aircraft(1);
 		fixture.setLongitude(1.0);
 		fixture.setLastOdd(1);
-		fixture.setOddMsg(new AirbornePositionMessage(""));
+		fixture.setOddMsg(new AirbornePositionMessage("11;5022296;01011000110000111000010000011001000001011111100101110011110110100111011011001001;1432557564600"));
 		fixture.setLatitude(1.0);
 		fixture.setFlightNo("");
 		fixture.setVelocity(1.0);
-		fixture.setEvenMsg(new AirbornePositionMessage(""));
+		fixture.setEvenMsg(new AirbornePositionMessage("11;5022296;01011000110000111000010000011001000001011111100101110011110110100111011011001001;1432557564600"));
 		fixture.setVeloAngle(1.0);
 
 		String result = fixture.toString();
